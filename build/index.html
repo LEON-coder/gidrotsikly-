@@ -8,6 +8,7 @@
   <meta name="keywords" content="">
   <link rel="stylesheet" type="text/css" href="css/styles.css">
   <link rel="stylesheet" type="text/css" href="css/tailwind.css">
+  <link rel="stylesheet" href="../node_modules/animate.css/animate.css">
 </head>
 <body> 
   <div class="wrapper">  
@@ -18,11 +19,11 @@
           <li class="header__list_item">Акции</li>
           <li class="header__list_item">Доставка и оплата</li>
         </ul><a class="header__logo"> <img src="../../img/header/лого.svg" alt=""></a>
-        <div class="header__location-block"><a class="location" href="../../img/header/location_icon.svg"></a>
-          <p class="header__addres"> Москва,  ул. Науки  25</p>
+        <div class="header__location-block"><a class="location-block--link" href="https://yandex.ru/maps/213/moscow/?ll=37.622504%2C55.753215&amp;z=10"><img class="location" src="../../img/header/location_icon.svg" alt=""></a>
+          <p class="header__address"> Москва,  ул. Науки  25</p>
         </div>
         <div class="header__customer--block"> <img class="header__picture" src="../../img/header/customer_picture_header.svg" alt=""><img class="header__customer" src="../../img/header/person_picture_header.svg" alt=""></div>
-        <div class="header__cart--block"> <img class="header__picture-cart" src="../../img/header/cart.svg"><img class="header__picture-count" src="../../img/header/count_cart.svg"></div>
+        <div class="header__cart--block"> <img class="header__picture-cart" src="../../img/header/cart.svg" alt=""><img class="header__picture-count" src="../../img/header/count_cart.svg" alt=""></div>
       </div>
       <div class="header__navigation_sub-menu">
         <ul class="header__sub-menu">
@@ -39,9 +40,58 @@
     </header>
     <div class="section-banners"> 
       <div class="banner__left"> 
-        <p class="banner__left_header"></p>
+        <p class="banner__left_header">Почувствуй скорость и экстрим</p>
       </div>
-      <div class="banner__right"> </div>
+      <div class="banner__right"> <img class="motor_boat" src="img/section-banners/motor_picture.png"><a class="banner__right_discont" href="#">акция</a>
+        <number class="banner__right_actual-price">190 000 р</number><img class="banner__right_non-actual-price" src="../img/section-banners/old_price.png">
+        <p class="boat__motor--describe"> Лодочный мотор  Suzuki DF9.9BRS</p>
+      </div>
+    </div>
+    <div class="section-block-search content">
+      <div class="section__search--tabs tabs"> 
+        <nav class="tabs__items"><a class="tabs__item" href="#tab_01">Поиск по  номеру</a><a class="tabs__item" href="#tab_02">Поиск по марке</a><a class="tabs__item" href="#tab_03">Поиск по названию товара</a></nav>
+      </div>
+      <div class="section__tabs__body tabs__body">
+        <div class="tabs__block" id="tab_01"> 
+          <div class="section__search--area"></div>
+          <input class="area" type="text" placeholder="Поиск по  номеру">
+          <div class="button-search grey">искать  </div>
+        </div>
+        <div class="tabs__block" id="tab_02"> 
+          <div class="section__search--area"></div>
+          <input class="area" type="text" placeholder="Поиск по марке">
+          <div class="button-search green">искать </div>
+        </div>
+        <div class="tabs__block" id="tab_03">  
+          <div class="section__search--area"></div>
+          <input class="area" type="text" placeholder="Поиск по названию товара">
+          <div class="button-search blue">искать</div>
+        </div>
+      </div>
+      <div class="section-block-search__categories-goods"> 
+        <div class="categories-goods_top-row">
+          <div class="categories-goods"> 
+            <p class="goods__headline">  Квадроциклы</p><img class="goods__picture" src="/img/section-banners/blocks_tabs/quadrocycle.png"><a class="link-goods_describe" href="#">Подробее</a>
+          </div>
+          <div class="categories-goods"> 
+            <p class="goods__headline"> Гидроциклы</p><img class="goods__picture" src="/img/section-banners/blocks_tabs/hydrocycle.png"><a class="link-goods_describe" href="#">Подробее</a>
+          </div>
+          <div class="categories-goods">
+            <p class="goods__headline">  Катера</p><img class="goods__picture" src="/img/section-banners/blocks_tabs/boats.png"><a class="link-goods_describe" href="#">Подробее</a>
+          </div>
+        </div>
+        <div class="categories-goods_bottom-row">
+          <div class="categories-goods"> 
+            <p class="goods__headline">  Снегоходы</p><img class="goods__picture" src="/img/section-banners/blocks_tabs/snowcycle.png"><a class="link-goods_describe" href="#">Подробее</a>
+          </div>
+          <div class="categories-goods">
+            <p class="goods__headline">  Вездеходы</p><img class="goods__picture" src="/img/section-banners/blocks_tabs/baggi.png"><a class="link-goods_describe" href="#">Подробее</a>
+          </div>
+          <div class="categories-goods">
+            <p class="goods__headline"> Двигатели</p><img class="goods__picture" src="/img/section-banners/blocks_tabs/motor_boat_pic.png"><a class="link-goods_describe" href="#">Подробее</a>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </body>
