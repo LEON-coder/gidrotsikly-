@@ -85,7 +85,7 @@
   #slide4:checked ~ #controls label:nth-child(1) 
   {
     display:flex;
-    background: url(/img/popular-goods/next.png) no-repeat;
+    background: url(../../img/popular-goods/next.png) no-repeat;
     float: right;
     margin: 0 -50px 0 0;
     display: block;
@@ -95,7 +95,7 @@
   #slide2:checked ~ #controls label:nth-last-child(3),
   #slide3:checked ~ #controls label:nth-last-child(4),
   #slide4:checked ~ #controls label:nth-last-child(1) {
-    background: url(/img/popular-goods/prev.png) no-repeat;
+    background: url(../../img/popular-goods/prev.png) no-repeat;
     float: left;
     margin: 0 0 0 -50px;
     display: block;
