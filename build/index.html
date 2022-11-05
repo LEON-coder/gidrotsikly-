@@ -10,6 +10,7 @@
   <link rel="stylesheet" type="text/css" href="css/tailwind.css">
   <link rel="stylesheet" type="text/css" href="slider/slider.css">
   <link rel="stylesheet" type="text/css" href="slider/slider-2.css">
+  <link rel="stylesheet" type="text/css" href="slider/slider-3.css">
 </head>
 <body> 
   <div class="wrapper">  
@@ -41,10 +42,74 @@
     </header>
     <div class="section-banners"> 
       <div class="banner__left"> 
-        <p class="banner__left_header">Почувствуй скорость и экстрим</p>
+        <div class="popular-goods__slider" id="block-picture-slider">    
+          <div class="article">
+            <input id="section-banners--slide-1" type="radio" name="slider__section-banners" checked>
+            <input id="section-banners--slide-2" type="radio" name="slider__section-banners">
+            <input id="section-banners--slide-3" type="radio" name="slider__section-banners">
+            <input id="section-banners--slide-4" type="radio" name="slider__section-banners">
+            <input id="section-banners--slide-5" type="radio" name="slider__section-banners">
+            <input id="section-banners--slide-6" type="radio" name="slider__section-banners">
+            <div id="slides__section-banners"> 
+              <div id="overflow__section-banners">
+                <div class="inner__section-banners"> 
+                  <div class="article__section-banners">
+                    <div class="slide__section-banners">
+                      <div class="slide-content__section-banners"><img class="section-banners__pic" src="img/section-banners/slider-banner.jpg" alt="">
+                        <p class="banner__left_header">Почувствуй скорость и экстрим</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="article__section-banners">
+                    <div class="slide__section-banners">
+                      <div class="slide-content__section-banners"><img class="section-banners__pic" src="img/section-banners/pic-2-hydro.jpg" alt=""></div>
+                    </div>
+                  </div>
+                  <div class="article__section-banners">
+                    <div class="slide__section-banners">
+                      <div class="slide-content__section-banners"><img class="section-banners__pic" src="img/section-banners/pic-3-hydro.jpg" alt=""></div>
+                    </div>
+                  </div>
+                  <div class="article__section-banners">
+                    <div class="slide__section-banners">
+                      <div class="slide-content__section-banners"><img class="section-banners__pic" src="img/section-banners/pic-4-hydro.jpg" alt=""></div>
+                    </div>
+                  </div>
+                  <div class="article__section-banners">
+                    <div class="slide__section-banners">
+                      <div class="slide-content__section-banners"><img class="section-banners__pic" src="img/section-banners/slider-banner.jpg" alt=""></div>
+                    </div>
+                  </div>
+                </div>
+                <!-- .inner-->
+              </div>
+              <!-- #overflow-->
+            </div>
+            <!-- #slides-->
+            <!-- Controls and Active Slide Display-->
+            <div id="controls__section-banners">
+              <label for="section-banners--slide-1" checked></label>
+              <label for="section-banners--slide-2"></label>
+              <label for="section-banners--slide-3"></label>
+              <label for="section-banners--slide-4"></label>
+              <label for="section-banners--slide-5"></label>
+              <label for="section-banners--slide-6"></label>
+            </div>
+            <!-- #controls-->
+            <div id="active__section-banners">
+              <label for="section-banners--slide-1" checked></label>
+              <label for="section-banners--slide-2"></label>
+              <label for="section-banners--slide-3"></label>
+              <label for="section-banners--slide-4"></label>
+              <label for="section-banners--slide-5"></label>
+              <label for="section-banners--slide-6"></label>
+            </div>
+            <!-- #active-->
+          </div>
+        </div>
       </div>
-      <div class="banner__right"> <img class="motor_boat" src="../../img/section-banners/motor_picture.png"><a class="banner__right_discont" href="#">акция</a>
-        <number class="banner__right_actual-price">190 000 р</number><img class="banner__right_non-actual-price" src="../../img/section-banners/old_price.png">
+      <div class="banner__right"> <img class="motor_boat" src="img/section-banners/motor_picture.png"><a class="banner__right_discont" href="#">акция</a>
+        <number class="banner__right_actual-price">190 000 р</number><img class="banner__right_non-actual-price" src="img/section-banners/old_price.png">
         <p class="boat__motor--describe"> Лодочный мотор  Suzuki DF9.9BRS</p>
       </div>
     </div>
@@ -144,7 +209,7 @@
                       <div class="popular-goods__slider_block">
                         <div class="sale">SALE</div><img class="like" src="img/popular-goods/like.svg" alt="like"><img class="slider_block--pic" src="img/popular-goods/rescue_equipment.png" alt="">
                         <p class="popular-goods__slider_describe rescue-equip">&Scy;&pcy;&acy;&scy;&acy;&tcy;&iecy;&lcy;&softcy;&ncy;&ocy;&iecy; &scy;&ncy;&acy;&rcy;&yacy;&zhcy;&iecy;&ncy;&icy;&iecy;</p>
-                        <number class="price empty">&ncy;&iecy;&tcy; &vcy; &ncy;&acy;&lcy;&icy;&chcy;&icy;&icy;</number><a class="report-link" href="#">&Scy;&ocy;&ocy;&bcy;&shchcy;&icy;&tcy;&softcy; &ocy; &pcy;&ocy;&scy;&tcy;&ucy;&pcy;&lcy;&iecy;&ncy;&icy;&icy;</a>
+                        <number class="empty">&ncy;&iecy;&tcy; &vcy; &ncy;&acy;&lcy;&icy;&chcy;&icy;&icy;</number><a class="report-link" href="#">&Scy;&ocy;&ocy;&bcy;&shchcy;&icy;&tcy;&softcy; &ocy; &pcy;&ocy;&scy;&tcy;&ucy;&pcy;&lcy;&iecy;&ncy;&icy;&icy;</a>
                       </div>
                     </div>
                   </div>

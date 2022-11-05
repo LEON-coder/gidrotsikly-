@@ -109,7 +109,7 @@ input {
 #slide-2:checked ~ #slides-2 .inner-2 { margin-left:-100%; }
 #slide-3:checked ~ #slides-2 .inner-2 { margin-left:-200%; }
 #slide-4:checked ~ #slides-2 .inner-2 { margin-left:-300%; }
-#slide-5:checked ~ #slides-2 .inner-2 { margin-left:-400%; }
+
 
 
 #overflow-2 {
@@ -193,8 +193,8 @@ input {
 #slide-1:checked ~ #active-2 label:nth-child(1),
 #slide-2:checked ~ #active-2 label:nth-child(2),
 #slide-3:checked ~ #active-2 label:nth-child(3),
-#slide-4:checked ~ #active-2 label:nth-child(4),
-#slide-5:checked ~ #active-2 label:nth-child(5) {
+#slide-4:checked ~ #active-2 label:nth-child(4)
+{
 	background: #333;
 	border-color: #333 !important;
 }
