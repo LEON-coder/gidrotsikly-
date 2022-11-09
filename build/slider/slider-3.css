@@ -61,11 +61,9 @@ body {
       font-weight: bold;
   }
   
-  label, a {
-      color: teal;
-      cursor: pointer;
-      text-decoration: none;
-  }
+  .input__slider {
+	display: none;
+}
 
   * { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
   label, #active, img { -moz-user-select:none;-webkit-user-select:none; }
@@ -190,6 +188,10 @@ body {
   
   .slide-content__section-banners {
       margin-right: 0;
+  }
+
+  .slider-picture-2{
+    
   }
   
   
@@ -330,6 +332,8 @@ body {
   #tablet:checked ~ #slider #active {
       margin: 22% 0 0;
   }
+
+
 
   
   

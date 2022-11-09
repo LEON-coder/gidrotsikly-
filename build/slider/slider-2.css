@@ -41,41 +41,14 @@ body {
   overflow-x: hidden;
 }
 
-h1,h2,h3,h4,h5,h6 {
-	font-weight:bold;
-	font-size: 16px;
-	margin: 12px 0;
-}
-
-h1 {
-	margin: 35px 0 5px;
-	font-size: 26px;
-	font-weight: normal;
-}
-
 #slider-2 {
 	text-align: center;
-}
-
-h2 {
-	margin: 40px 0 25px;
-	border-bottom: 1px solid #bbb;
-	padding: 0 0 10px;
-}
-
-p {
-	margin: 0 0 16px;
 }
 
 strong { 
 	font-weight: bold;
 }
 
-label, a {
-	color: teal;
-	cursor: pointer;
-	text-decoration: none;
-}
 label:hover, a:hover {
 	color: #000 !important;
 }
@@ -101,7 +74,7 @@ label, #active, img { -moz-user-select:none;-webkit-user-select:none; }
 /* NEW EXPERIMENT */
 /* Slider Setup */
 
-input {
+.input__slider-2{
 	display: none;
 }
 
