@@ -1,0 +1,261 @@
+.section-block-tabs {
+    display: flex;
+    margin-top: 77px;
+}
+
+.tab-wrap {
+    width: 1170px;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Style the tab */
+.tab {
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    height: 47px;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+    width: 204px;
+    height: 47px;
+    background: #ffffff;
+    font-family: 'SF Pro Display';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    color: #2f3035;
+    margin-right: 54px;
+    border: none;
+}
+
+.tab button:last-child {
+    width: 248px;
+    height: 47px;
+    margin-right: 0;
+    font-family: 'SF Pro Display';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+    width: 204px;
+    height: 47px;
+    font-family: 'SF Pro Display';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    color: #2f3035;
+    background-color: #ddd;
+}
+
+.tab button:last-child:hover {
+    width: 258px;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+}
+
+/* Style the tab content */
+.tabcontent {
+    display: none;
+    margin-top: 37px;
+}
+
+.area-tab {
+    display: flex;
+    width: 1170px;
+    height: 50px;
+    background: #f0f0f4;
+    border-radius: 3px;
+    padding-left: 20px;
+}
+
+.tabs__item {
+    width: 214px;
+    height: 47px;
+    font-family: 'SF Pro Display';
+    font-size: 20px;
+    text-align: center;
+    color: #2f3035;
+    background: transparent;
+    border-radius: 5px;
+    margin-right: 28px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 26px;
+    padding-right: 26px;
+    padding-bottom: 12px;
+    padding-top: 11px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.tabs__item:hover {
+    width: 214px;
+    height: 47px;
+    background: #f0f0f4;
+    border-radius: 5px;
+    font-family: 'SF Pro Display';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    color: #2f3035;
+    padding-left: 26px;
+    padding-right: 26px;
+    padding-bottom: 12px;
+    padding-top: 11px;
+}
+
+.tabs__item:nth-child(3) {
+    width: auto;
+    margin-right: 0;
+}
+
+.content {
+    padding: 50px 0;
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
+.tabs {
+    margin: 0 0 30px 0;
+}
+
+.tabs__items {
+    display: flex;
+}
+
+.tabs__block {
+    position: relative;
+    font-size: 18px;
+    line-height: 24px;
+    margin-top: 0;
+}
+
+.tabs__block:before {
+    font-family: 'SF Pro Display';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    text-align: center;
+    color: #2f3035;
+    content: '';
+    height: 50px;
+    width: 33, 33%;
+    position: absolute;
+    top: -50px;
+}
+
+.tabs__block:nth-child(1):before {
+    content: '';
+    left: 0;
+    height: 24px;
+    font-family: 'SF Pro Display';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    color: #2f3035;
+}
+
+.tabs__block:nth-child(2):before {
+    background-color: #1c62cd;
+    left: 33, 333%;
+    font-weight: 700;
+}
+
+.tabs__block:nth-child(3):before {
+    background-color: green;
+    font-weight: 700;
+}
+.tabs__block:nth-child(3) {
+    background-color: green;
+}
+
+.tabs__block:target {
+    display: flex;
+    font-family: 'SF Pro Display';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    color: #2f3035;
+    height: 50px;
+}
+
+.section__tab:nth-child(3) {
+    height: 24px;
+    width: 238px;
+    margin-right: 0;
+}
+
+.section__search--area {
+    width: 1170px;
+    height: 50px;
+    margin-top: 25px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+    display: flex;
+}
+
+.section__search--tabs {
+    display: flex;
+    max-width: 1170px;
+    flex-direction: column;
+}
+
+.area {
+    display: flex;
+    width: 1025px;
+    height: 50px;
+    background: #f0f0f4;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.button-search {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 145px;
+    background: #1c62cd;
+    border-radius: 3px;
+    font-family: 'SF Pro Display';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: #ffffff;
+    transition: 1s;
+    -webkit-transition: 1s;
+    -moz-transition: 1s;
+    -ms-transition: 1s;
+    -o-transition: 1s;
+}
+
+.area {
+    padding-left: 20px;
+}

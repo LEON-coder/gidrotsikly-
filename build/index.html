@@ -7,10 +7,11 @@
   <meta name="viewport" content="width=device-width, initiale-scale=1">
   <meta name="keywords" content="">
   <link rel="stylesheet" type="text/css" href="css/styles.css">
-  <link rel="stylesheet" type="text/css" href="css/tailwind.css">
-  <link rel="stylesheet" type="text/css" href="slider/slider.css">
-  <link rel="stylesheet" type="text/css" href="slider/slider-2.css">
-  <link rel="stylesheet" type="text/css" href="slider/slider-3.css">
+  <link rel="stylesheet" type="text/css" href="sliders/slider/slider.css">
+  <link rel="stylesheet" type="text/css" href="sliders/slider-2/slider-2.css">
+  <link rel="stylesheet" type="text/css" href="sliders/slider-3/slider-3.css">
+  <link rel="stylesheet" type="text/css" href="tabs/tabs.css">
+  <script src="tabs/tabs.js"></script>
 </head>
 <body> 
   <div class="wrapper">  
@@ -82,7 +83,7 @@
                   </div>
                   <div class="article__section-banners">
                     <div class="slide__section-banners">
-                      <div class="slide-content__section-banners"><img class="section-banners__pic" src="img/section-banners/pic-2-hydro.jpg" alt=""></div>
+                      <div class="slide-content__section-banners"><img class="section-banners__pic" src="img/section-banners/pic-3-hydro.jpg" alt=""></div>
                     </div>
                   </div>
                 </div>
@@ -102,7 +103,7 @@
             </div>
             <!-- #controls-->
             <div id="active__section-banners">
-              <label for="section-banners--slide-1"></label>
+              <label for="section-banners--slide-1" checked></label>
               <label for="section-banners--slide-2"></label>
               <label for="section-banners--slide-3"></label>
               <label for="section-banners--slide-4"></label>
@@ -118,27 +119,40 @@
         <p class="boat__motor--describe"> Лодочный мотор  Suzuki DF9.9BRS</p>
       </div>
     </div>
-    <div class="section-block-search content">
-      <div class="section__search--tabs tabs"> 
-        <nav class="tabs__items"><a class="tabs__item" href="#tab_01">Поиск по  номеру</a><a class="tabs__item" href="#tab_02">Поиск по марке</a><a class="tabs__item" href="#tab_03">Поиск по названию товара</a></nav>
+    <div class="section-block-tabs"> 
+      <div class="tab-wrap">
+        <div class="tab">
+          <button class="tablinks" onclick="openCity(event, 'search_for_number')">Поиск по  номеру</button>
+          <button class="tablinks" onclick="openCity(event, 'search_for_brand')">Поиск по марке</button>
+          <button class="tablinks" onclick="openCity(event, 'search_for_name--goods')">Поиск по названию товара</button>
+        </div>
+        <div class="tabcontent" id="search_for_number">
+          <div class="tabs__block" id="tab_01">
+            <div class="section__search--area">
+              <input class="area-tab" type="text" placeholder="Введите номер">
+              <div class="button-search">&icy;&scy;&kcy;&acy;&tcy;&softcy;  </div>
+            </div>
+          </div>
+        </div>
+        <div class="tabcontent" id="search_for_brand">
+          <div class="tabs__block" id="tab_02">
+            <div class="section__search--area">
+              <input class="area-tab" type="text" placeholder="Введите марку">
+              <div class="button-search">&icy;&scy;&kcy;&acy;&tcy;&softcy; </div>
+            </div>
+          </div>
+        </div>
+        <div class="tabcontent" id="search_for_name--goods">
+          <div class="tabs__block" id="tab_03">
+            <div class="section__search--area">
+              <input class="area-tab" type="text" placeholder="Введите название товара">
+              <div class="button-search">&icy;&scy;&kcy;&acy;&tcy;&softcy;</div>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="section__tabs__body tabs__body">
-        <div class="tabs__block" id="tab_01"> 
-          <div class="section__search--area"></div>
-          <input class="area" type="text" placeholder="Поиск по  номеру">
-          <div class="button-search grey">искать  </div>
-        </div>
-        <div class="tabs__block" id="tab_02"> 
-          <div class="section__search--area"></div>
-          <input class="area" type="text" placeholder="Поиск по марке">
-          <div class="button-search green">искать </div>
-        </div>
-        <div class="tabs__block" id="tab_03">  
-          <div class="section__search--area"></div>
-          <input class="area" type="text" placeholder="Поиск по названию товара">
-          <div class="button-search blue">искать</div>
-        </div>
-      </div>
+    </div>
+    <div class="section-block-search">
       <div class="section-block-search__categories-goods"> 
         <div class="categories-goods_top-row">
           <div class="categories-goods"> 
@@ -178,11 +192,11 @@
       </div>
       <div class="popular-goods__slider">   
         <article id="slider">
-          <input class="input__slider" id="slide1" checked="" type="radio" name="slider">
-          <input class="input__slider" id="slide2" type="radio" name="slider">
-          <input class="input__slider" id="slide3" type="radio" name="slider">
-          <input class="input__slider" id="slide4" type="radio" name="slider">
-          <input class="input__slider" id="slide5" type="radio" name="slider">
+          <input class="input__slider" id="slide1" type="radio"  name="slider1" checked/>
+          <input class="input__slider" id="slide2" type="radio"  name="slider1" >
+          <input class="input__slider" id="slide3" type="radio"  name="slider1">
+          <input class="input__slider" id="slide4" type="radio"  name="slider1">
+          <input class="input__slider" id="slide5" type="radio"  name="slider1">
           <div id="slides">
             <div id="overflow">
               <div class="inner">
@@ -348,11 +362,8 @@
           <li class="popular-goods__nav_item">аксессуары </li>
         </ul>
       </div>
-      <input id="desktop" checked="" type="radio" name="respond">&#x9;
-      <input id="tablet" type="radio" name="respond">&#x9;
-      <input id="mobile" type="radio" name="respond">&#x9;   
       <article id="slider-2">
-        <input id="slide-1" type="radio" name="slider">&#x9;&#x9;
+        <input id="slide-1" type="radio" name="slider" checked>&#x9;&#x9;
         <input id="slide-2" type="radio" name="slider">&#x9;&#x9;
         <input id="slide-3" type="radio" name="slider">&#x9;&#x9;
         <input id="slide-4" type="radio" name="slider">&#x9;&#x9;
@@ -497,7 +508,7 @@
         <!-- #active-->
       </article>
     </div>
-    <footer> 
+    <div class="footer"> 
       <div class="footer__wrap"> 
         <div class="footer__block_describe">
           <div class="footer__describe_headline">Подпишитесь на нашу рассылку и узнавайте о акция быстрее</div>
@@ -522,6 +533,6 @@
         </div>
         <div class="footer__block_social-icons"> <a class="footer__link" href="#"><img class="footer__social-icon" src="img/footer/social-icons/instagram-sketched.svg" alt=""></a><a class="footer__link" href="#"> <img class="footer__social-icon" src="img/footer/social-icons/vk.svg" alt=""></a><a class="footer__link" href="#"> <img class="footer__social-icon" src="img/footer/social-icons/facebook.svg" alt=""></a><a class="footer__link" href="#"><img class="footer__social-icon" src="img/footer/social-icons/youtube.svg" alt=""></a></div>
       </div>
-    </footer>
+    </div>
   </div>
 </body>
