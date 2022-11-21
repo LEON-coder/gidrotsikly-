@@ -1,7 +1,7 @@
-let slideContent = document.querySelector('slide-content');
-slideContent.addEventListener('click', function(event) {
-	if (event.target.closest('.like')) {
-		event.target.classList.remove('like');
+let likeIcon = document.querySelector('like');
+likeIcon.addEventListener('click', function() {
+	if (likeIcon.style.fill == "rgba(0, 0, 255)") {
+		likeIcon.style.fill == "rgb(2, 54, 242)";
 	}
 })
 
