@@ -33,7 +33,7 @@
 }
 
 .tab button:last-child {
-    width: 248px;
+    width: auto;
     height: 47px;
     margin-right: 0;
     font-family: 'SF Pro Display';
@@ -44,7 +44,10 @@
 }
 
 /* Change background color of buttons on hover */
-.tab button:hover {
+
+
+/* Create an active/current tablink class */
+.tab button.active {
     width: 204px;
     height: 47px;
     font-family: 'SF Pro Display';
@@ -57,12 +60,12 @@
     background-color: #ddd;
 }
 
-.tab button:last-child:hover {
-    width: 258px;
-}
-
-/* Create an active/current tablink class */
-.tab button.active {
+.tab button:last-child.active {
+    width: auto;
+    padding-left: 26px;
+    padding-right: 26px;
+    padding-top: 11px;
+    padding-bottom: 12px;
 }
 
 /* Style the tab content */
