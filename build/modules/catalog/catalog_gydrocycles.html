@@ -7,7 +7,7 @@
   <div class="Block-gydrocycles">
     <div class="Block-gydrocycles__block-headline"> 
       <p class="headline">Гидроциклы</p>
-      <div class="Block-gydrocycles__block-headline_links"> <a class="Block-gydrocycles__block-headline_link">Полноприводные</a><a class="Block-gydrocycles__block-headline_link">от 5000</a><a class="Block-gydrocycles__block-headline_link">BRP</a><a class="Block-gydrocycles__block-headline_link">еще</a></div>
+      <div class="Block-gydrocycles__block-headline_links"> <a class="Block-gydrocycles__block-headline_link width_gydrocycles--frame">Полноприводные</a><a class="Block-gydrocycles__block-headline_link">от 5000</a><a class="Block-gydrocycles__block-headline_link">BRP</a><a class="Block-gydrocycles__block-headline_link">еще</a></div>
     </div>
     <div class="Block-gydrocycles-cards_and_aside">
       <div class="Block-gydrocycles__aside">
@@ -17,24 +17,59 @@
             <h2 class="aside__parameters__headline"> по марке  </h2>
           </div>
           <div class="parameters__availability_block">
-            <div class="parameters__availability_headline"><img class="icon_headline" src="img/catalog/aside/arrow_top.svg" alt=""/>
-              <p class="availability_headline">Наличие              </p>
+            <div class="parameters__availability_headline">
+              <div class="dropdown">
+                <input id="checkbox_toggle" type="checkbox"/><img class="icon_headline" src="img/catalog/aside/arrow_top.svg" alt=""/>
+                <label for="checkbox_toggle">Наличие          </label>
+                <ul class="checkbox-block">
+                  <li class="checkbox">             
+                    <label for="#availability--yes"> </label>
+                    <input class="visibility" id="availability--yes" type="checkbox"/>В наличие 
+                  </li>
+                  <li class="checkbox">   
+                    <label for="#availability--yes"> </label>
+                    <input class="visibility" id="availability--yes" type="checkbox"/>Под заказ           
+                  </li>
+                </ul>
+              </div>
             </div>
-            <div class="parameters__availability_block-checkbox">    
-              <label for="#availability--yes"> 
-                <input id="availability--yes" type="checkbox"/>В наличие
-              </label>
-              <label for="#availability--yes"> 
-                <input id="availability--yes" type="checkbox"/>Под заказ 
-              </label>
+            <div class="parameters__availability_headline">
+              <div class="dropdown">
+                <input id="checkbox_toggle-2" type="checkbox"/><img class="icon_headline" src="img/catalog/aside/arrow_top.svg" alt=""/>
+                <label for="checkbox_toggle-2">Новинки          </label>
+                <ul class="checkbox-block-2">
+                  <li class="checkbox-2">             
+                    <label for="#availability--yes"> </label>
+                    <input class="visibility" id="availability--yes" type="checkbox"/>Все 
+                  </li>
+                  <li class="checkbox-2">   
+                    <label for="#availability--yes"> </label>
+                    <input class="visibility" id="availability--yes" type="checkbox"/>Новинки
+                  </li>
+                  <li class="checkbox-2">   
+                    <label for="#availability--yes"> </label>
+                    <input class="visibility" id="availability--yes" type="checkbox"/>Акции
+                  </li>
+                </ul>
+              </div>
             </div>
-            <div class="parameters__availability_headline"><img class="icon_headline" src="img/catalog/aside/arrow_top.svg" alt=""/>
-              <p class="availability_headline"> Цена </p>
+            <div class="parameters__availability_headline">
+              <div class="price-block"><img class="icon_headline" src="img/catalog/aside/arrow_top.svg" alt=""/>
+                <label for="checkbox_toggle-1">Цена</label>
+              </div>
             </div>
             <div class="parameters__availability_engine--describe"> 
               <div class="engine__power">
                 <div class="engine__power_block"> 
-                  <div class="headline-engine">Мощность, л.с.</div><img class="icon_headline headline--engine" src="img/catalog/aside/arrow_top.svg" alt=""/>
+                  <div class="headline-engine">Мощность, л.с.          
+                    <select id="power">          
+                      <option value="">90</option>
+                      <option value="">130</option>
+                      <option value="">154</option>
+                      <option value="">230</option>
+                      <option value="">300</option>
+                    </select>
+                  </div>
                 </div>
                 <div class="engine__power_stripe"> </div>
               </div>
@@ -52,41 +87,48 @@
               </div>
             </div>
             <div class="parameters__availability_block brand">
-              <div class="parameters__availability_headline margin-headline--brand"><img class="icon_headline" src="img/catalog/aside/arrow_top.svg" alt=""/>
-                <p class="availability_headline">Бренд               </p>
-              </div>
+              <div class="parameters__availability_headline margin-headline--brand">
+                <div class="dropdown">
+                  <input id="checkbox_toggle-3" type="checkbox"/><img class="icon_headline" src="img/catalog/aside/arrow_top.svg" alt=""/>
+                  <label for="checkbox_toggle-3">Бренд           </label>
+                  <ul class="checkbox-block-3">
+                    <li class="checkbox-3">             
+                      <label for="#availability--yes"> </label>
+                      <input class="visibility" id="availability--yes" type="checkbox"/>BRP 
+                    </li>
+                    <li class="checkbox-3">  
+                      <label for="#availability--yes"> </label>
+                      <input class="visibility" id="availability--yes" type="checkbox"/>Spark 2
+                    </li>
+                    <li class="checkbox-3">   
+                      <label for="#availability--yes"> </label>
+                      <input class="visibility" id="availability--yes" type="checkbox"/>Spark 3 
+                    </li>
+                  </ul>
+                </div>
+              </div><a class="link__brands--show-more"> Показать еще </a>
             </div>
-            <div class="parameters__availability_block-checkbox width--brand">    
-              <label for="#availability--yes"> 
-                <input class="visibility" id="availability--yes" type="checkbox"/>BRP
-              </label>
-              <label for="#availability--yes.margin-left"> 
-                <input class="margin-left visibility" id="availability--yes" type="checkbox"/>Spark 2 
-              </label>
-              <label for="#availability--yes"> 
-                <input class="visibility" id="availability--yes" type="checkbox"/>Spark 3    
-              </label>
-            </div><a class="link__brands--show-more"> Показать еще </a>
             <div class="parameters__availability_model"> 
               <div class="parameters__availability_model-list">     <img class="icon_headline" src="img/catalog/aside/arrow_top.svg" alt=""/>
                 <p class="availability_headline">Модель</p>
               </div>
-              <input class="text-area-model" type="textarea"/>
+              <input class="text-area-model" type="textarea" placeholder="Введите модель"/>
               <div class="parameters__availability_block-checkbox brand--active">    
-                <label class="brand--label change_width--brand" for="#availability--yes"> 
-                  <input class="visibility brand-block--checkbox" id="availability--yes" type="checkbox"/>Sea-doo Spark 2
+                <label class="brand--label change_width--brand" for="Sea-doo Spark 2"> 
+                  <input class="visibility brand-block--checkbox" id="availability--yes" type="checkbox" value="Sea-doo Spark 2"/>Sea-doo Spark 2
                 </label>
-                <label class="brand--label change_width--brand" for="#availability--yes.margin-left"> 
-                  <input class="visibility brand-block--checkbox" id="availability--yes" type="checkbox"/>SeaDoo Spark 90  
+                <label class="brand--label change_width--brand" for="SeaDoo Spark 90"> 
+                  <input class="visibility brand-block--checkbox" id="availability--yes" type="checkbox" value="SeaDoo Spark 90"/>SeaDoo Spark 90  
                 </label>
-                <label class="brand--label change_width--brand" for="#availability--yes"> 
-                  <input class="visibility brand-block--checkbox" id="availability--yes" type="checkbox"/>SeaDoo GTI 155  
+                <label class="brand--label change_width--brand" for="SeaDoo GTI 155"> 
+                  <input class="visibility brand-block--checkbox" id="availability--yes" type="checkbox" value="SeaDoo GTI 155"/>SeaDoo GTI 155  
                 </label>
-                <label class="brand--label change_width--brand" for="#availability--yes"> 
-                  <input class="visibility brand-block--checkbox" id="availability--yes" type="checkbox"/>SeaDoo GTR 230 
-                </label><a class="link__brands--show-more"> Показать еще </a>
+                <label class="brand--label change_width--brand" for="SeaDoo GTR 230 "> 
+                  <input class="visibility brand-block--checkbox" id="availability--yes" type="checkbox" value="SeaDoo GTR 230 "/>SeaDoo GTR 230 
+                </label>
               </div>
-              <div class="parameters__availability_block brand"></div>
+            </div><a class="link__brands--show-more"> Показать еще </a>
+            <div class="parameters__availability_block brand">
               <div class="parameters__availability_headline margin-headline--brand"><img class="icon_headline" src="img/catalog/aside/arrow_top.svg" alt=""/>
                 <p class="availability_headline">Акции </p>
               </div>
