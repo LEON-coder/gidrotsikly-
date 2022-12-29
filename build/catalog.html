@@ -11,6 +11,7 @@
   <link rel="stylesheet" type="text/css" href="slider/slider.css">
   <link rel="stylesheet" type="text/css" href="slider/slider-2.css">
   <link rel="stylesheet" type="text/css" href="checkbox/checkbox.css">
+  <link rel="stylesheet" type="text/css" href="Range_slider/Range_slider.css">
   <body> 
     <div class="wrapper"> 
       <header> 
@@ -98,8 +99,28 @@
                     </div>
                   </div>
                   <div class="parameters__availability_headline">
-                    <div class="price-block"><img class="icon_headline" src="img/catalog/aside/arrow_top.svg" alt="">
-                      <label for="checkbox_toggle-1">Цена</label>
+                    <div class="dropdown"> 
+                      <input id="checkbox_toggle-7" type="checkbox"><img class="icon_headline" src="img/catalog/aside/arrow_top.svg" alt="">
+                      <label for="checkbox_toggle-7">Цена                           </label>
+                      <ul class="checkbox-block-7">           
+                        <div class="filter">
+                          <div><span>&TScy;&iecy;&ncy;&acy;</span>
+                            <div class="slider" id="rating">
+                              <div class="block-min" onmousedown="moveRange( this);" ontouchstart="moveRange( this);"></div>
+                              <div class="color-range"></div>
+                              <div class="block-max" onmousedown="moveRange(this)" ontouchstart="moveRange( this);"></div>
+                            </div>
+                            <div class="range">
+                              <number>100000</number>
+                              <number>500000</number>
+                            </div>
+                            <div class="limited-number-block">
+                              <div class="number_from">&ocy;&tcy;</div>
+                              <div class="number_to">&dcy;&ocy;</div>
+                            </div>
+                          </div>
+                        </div>
+                      </ul>
                     </div>
                   </div>
                   <div class="parameters__availability_engine--describe"> 
@@ -156,7 +177,7 @@
                     <div class="parameters__availability_model-list"> 
                       <div class="dropdown">
                         <input id="checkbox_toggle-4" type="checkbox"><img class="icon_headline" src="img/catalog/aside/arrow_top.svg" alt="">
-                        <label for="checkbox_toggle-4">Модель </label>
+                        <label for="checkbox_toggle-4">Модель           </label>
                         <ul class="checkbox-block-4">
                           <li class="checkbox-4__text-area">
                             <input class="text-area-model" type="textarea" placeholder="Введите модель">
@@ -185,35 +206,47 @@
                       </div>
                     </div>
                   </div><a class="link__brands--show-more"> Показать еще </a>
-                  <div class="parameters__availability_block brand">
-                    <div class="parameters__availability_headline margin-headline--brand"><img class="icon_headline" src="img/catalog/aside/arrow_top.svg" alt="">
-                      <p class="availability_headline">Акции </p>
-                    </div>
-                    <div class="block__links-actions"> 
-                      <div class="link__sale">SALE</div>
-                      <div class="link__sale NEW">NEW</div>
-                      <div class="link__sale HIT">HIT</div>
-                      <div class="link__sale diler">ДИЛЕР</div>
+                  <div class="parameters__availability_block sales">
+                    <div class="parameters__availability_headline margin-headline--brand">
+                      <div class="dropdown">
+                        <input id="checkbox_toggle-5" type="checkbox"><img class="icon_headline" src="img/catalog/aside/arrow_top.svg" alt="">
+                        <label for="checkbox_toggle-5">Акции </label>
+                        <ul class="checkbox-block-5">             
+                          <li class="checkbox-5"><a class="brand--label change_width--brand link__sale" href="#SALE">SALE</a></li>
+                          <li class="checkbox-5"><a class="brand--label change_width--brand link__sale NEW" href="#NEW">NEW</a></li>
+                          <li class="checkbox-5"> <a class="brand--label change_width--brand link__sale HIT" href="#HIT">HIT</a></li>
+                          <li class="checkbox-5">  <a class="brand--label change_width--brand link__sale diler" href="#ДИЛЕР">ДИЛЕР  </a></li>
+                        </ul>
+                      </div>
                     </div>
                   </div>
-                  <div class="parameters__availability_model"> 
-                    <div class="parameters__availability_model-list">     <img class="icon_headline" src="img/catalog/aside/arrow_top.svg" alt="">
-                      <p class="availability_headline">Страны        </p>
-                    </div>
-                    <div class="parameters__availability_block-checkbox brand--active">    
-                      <label class="brand--label change_width--brand" for="#availability--yes"> 
-                        <input class="visibility brand-block--checkbox" id="availability--yes" type="checkbox">Россия
-                      </label>
-                      <label class="brand--label change_width--brand" for="#availability--yes.margin-left"> 
-                        <input class="visibility brand-block--checkbox" id="availability--yes" type="checkbox">Германия  
-                      </label>
-                      <label class="brand--label change_width--brand" for="#availability--yes"> 
-                        <input class="visibility brand-block--checkbox" id="availability--yes" type="checkbox">Китай  
-                      </label>
-                      <label class="brand--label change_width--brand" for="#availability--yes"> 
-                        <input class="visibility brand-block--checkbox" id="availability--yes" type="checkbox">CША 
-                      </label><a class="link__brands--show-more"> Показать еще </a>
-                    </div>
+                  <div class="parameters__availability_headline">         
+                    <div class="dropdown">
+                      <input id="checkbox_toggle-6" type="checkbox"><img class="icon_headline" src="img/catalog/aside/arrow_top.svg" alt="">
+                      <label for="checkbox_toggle-6">Страны            </label>
+                      <ul class="checkbox-block-6 checkbox-block-6-width">          
+                        <li class="checkbox-6">
+                          <label class="brand--label change_width--brand" for="Sea-doo Spark 2"> 
+                            <input class="visibility brand-block--checkbox" id="availability--yes" type="checkbox" value="Sea-doo Spark 2">Россия
+                          </label>
+                        </li>
+                        <li class="checkbox-6">
+                          <label class="brand--label change_width--brand" for="SeaDoo Spark 90"> 
+                            <input class="visibility brand-block--checkbox" id="availability--yes" type="checkbox" value="SeaDoo Spark 90">Германия
+                          </label>
+                        </li>
+                        <li class="checkbox-6"> 
+                          <label class="brand--label change_width--brand" for="SeaDoo GTI 155"> 
+                            <input class="visibility brand-block--checkbox" id="availability--yes" type="checkbox" value="SeaDoo GTI 155">Китай
+                          </label>
+                        </li>
+                        <li class="checkbox-6">  
+                          <label class="brand--label change_width--brand" for="SeaDoo GTR 230 "> 
+                            <input class="visibility brand-block--checkbox" id="availability--yes" type="checkbox" value="SeaDoo GTR 230 ">CША 
+                          </label>
+                        </li>
+                      </ul>
+                    </div><a class="link__brands--show-more"> Показать еще </a>
                   </div>
                   <div class="choose-button-block"><a class="choose-button">ВЫБРАТЬ </a>
                     <div class="choose-button-block__add-block">
@@ -325,6 +358,33 @@
           </div>
         </div>
       </div>
+      <div class="footer"> 
+        <div class="footer__wrap"> 
+          <div class="footer__block_describe">
+            <div class="footer__describe_headline">Подпишитесь на нашу рассылку и узнавайте о акция быстрее</div>
+            <div class="footer__describe-area-block" type="text" placeholder="Введите ваш e-mail:"> 
+              <div class="footer__describe-area"> </div>
+              <div class="footer__describe-button"> Отправить</div>
+            </div>
+          </div>
+          <div class="footer__block_info"> 
+            <div class="footer__about">О компании </div>
+            <div class="footer__about">Контакты </div>
+            <div class="footer__about">Акции </div>
+            <div class="footer__about">Магазины </div>
+            <div class="footer__about agreement">Договор оферты</div>
+          </div>
+          <div class="footer__block_delivery">
+            <div class="footer__block_delivery_item">Интернет-магазин</div>
+            <div class="footer__block_delivery_item">Доставка и самовывоз</div>
+            <div class="footer__block_delivery_item">Возврат-обмен</div>
+            <div class="footer__block_delivery_item">Новости</div>
+            <div class="footer__block_delivery_item policy">Политика обработки персональных данных</div>
+          </div>
+          <div class="footer__block_social-icons"> <a class="footer__link" href="#"><img class="footer__social-icon" src="img/footer/social-icons/instagram-sketched.svg" alt=""></a><a class="footer__link" href="#"> <img class="footer__social-icon" src="img/footer/social-icons/vk.svg" alt=""></a><a class="footer__link" href="#"> <img class="footer__social-icon" src="img/footer/social-icons/facebook.svg" alt=""></a><a class="footer__link" href="#"><img class="footer__social-icon" src="img/footer/social-icons/youtube.svg" alt=""></a></div>
+        </div>
+      </div>
     </div>
+    <script src="Range_slider/Range_slider.js"></script>
   </body>
 </head>
