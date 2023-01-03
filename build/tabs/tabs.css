@@ -262,3 +262,22 @@
 .area {
     padding-left: 20px;
 }
+
+
+
+
+@media screen and (max-width:450px) {
+    .tab {
+        overflow: hidden;
+        display: flex;
+        align-items: center;
+        height: 47px;
+        width: 90%;
+    }
+
+    .tab-wrap {
+        width: 90%;
+        display: block;
+        margin: 0 auto;
+    }
+}
