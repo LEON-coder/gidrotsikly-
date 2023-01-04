@@ -1,6 +1,5 @@
 
-body {
-    line-height: 1; }
+
   ol, ul {
     list-style: none; }
   table {
@@ -20,10 +19,6 @@ body {
     border: none; }
 
  
-  body { 
-    margin: 50px auto;
-    overflow-x: hidden;
-  }
   
   h1,h2,h3,h4,h5,h6 {
       font-weight:bold;
@@ -300,10 +295,11 @@ body {
         height: auto;
     }
     
-        #controls__section-banners {
+    #controls__section-banners {
         margin: -25% 0 0 0;
         width: 100%;
         height: 30px;
+        display: none;
     }
 
     .slide-content__section-banners {
@@ -312,9 +308,10 @@ body {
     }
 
     #active__section-banners {
-         margin: 0 0; 
+        margin: 0;
     }
-    
+
+     
     #slides__section-banners .article__section-banners {
     float: left;
     margin-right: 0;
@@ -360,6 +357,7 @@ body {
     transition: all 0.5s ease-out;
     width: 100%;
     height: 146px;
+    margin: 0;
 }
 
 #slider #controls label {

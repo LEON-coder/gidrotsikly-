@@ -15,10 +15,6 @@ q, blockquote {
 a img {
   border: none; }
 
-body { 
-  overflow-x: hidden;
-}
-
 #slider-2 {
 	text-align: center;
 }
@@ -361,7 +357,7 @@ label, #active, img { -moz-user-select:none;-webkit-user-select:none; }
 		display: flex;
 		position: relative;
 		flex-direction: column;
-		width: 80%;
+		width: 100%;
 	}
 
 	#slides-2 .article-2 {
@@ -371,10 +367,11 @@ label, #active, img { -moz-user-select:none;-webkit-user-select:none; }
 	}
 
 	#overflow-2 {
-    width: 115%;
-    overflow: hidden;
-    height: 403px;
-}
+		width: 100%;
+		overflow: hidden;
+		height: 403px;
+	}
+ 
 
 	#slider-2 #active-2 {
 		margin: 20px auto;

@@ -272,12 +272,27 @@
         display: flex;
         align-items: center;
         height: 47px;
-        width: 90%;
+        width: 100%;
     }
 
     .tab-wrap {
         width: 90%;
         display: block;
         margin: 0 auto;
+        flex-wrap: wrap;
+    }
+
+    .tab button {
+        width: auto;
+        height: 47px;
+        background: #ffffff;
+        font-family: 'SF Pro Display';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 24px;
+        color: #2f3035;
+        margin-right: 10px;
+        border: none;
     }
 }
