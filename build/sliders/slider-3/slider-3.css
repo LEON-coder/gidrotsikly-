@@ -228,7 +228,7 @@
       transition: all 1s ease-out 0.6s;
   }
   
-  .info, #controls__section-banners, #slides__section-banners,#active__section-banners, #active__section-banners label, .info h3, .desktop, .tablet, .mobile {
+  .info, #controls__section-banners, #slides__section-banners,#active__section-banners, #active__section-banners label, .info h3, .desktop, .tablet {
       -webkit-transform: translateZ(0);
       -webkit-transition: all 0.5s ease-out;
       -moz-transition: all 0.5s ease-out;
@@ -349,7 +349,7 @@
     line-height: 0;
 }
 
-.info, #controls__section-banners, #slides__section-banners, #active__section-banners, #active__section-banners label, .info h3, .desktop, .tablet, .mobile {
+.info, #controls__section-banners, #slides__section-banners, #active__section-banners, #active__section-banners label, .info h3, .desktop, .tablet {
     -webkit-transform: translateZ(0);
     -webkit-transition: all 0.5s ease-out;
     -moz-transition: all 0.5s ease-out;

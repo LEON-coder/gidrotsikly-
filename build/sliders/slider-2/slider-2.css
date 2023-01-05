@@ -220,7 +220,7 @@ label, #active, img { -moz-user-select:none;-webkit-user-select:none; }
 	transition: all 1s ease-out 0.6s;
 }
 
-.info, #controls-2, #slides-2, #active-2, #active-2 label, .info h3, .desktop, .tablet, .mobile {
+.info, #controls-2, #slides-2, #active-2, #active-2 label, .info h3, .desktop, .tablet {
 	-webkit-transform: translateZ(0);
 	-webkit-transition: all 0.5s ease-out;
 	-moz-transition: all 0.5s ease-out;
@@ -311,7 +311,7 @@ label, #active, img { -moz-user-select:none;-webkit-user-select:none; }
 
 @media screen and (max-width: 450px) {
 
-	.info, #controls-2, #slides-2, #active-2, #active-2 label, .info h3, .desktop, .tablet, .mobile {
+	.info, #controls-2, #slides-2, #active-2, #active-2 label, .info h3, .desktop, .tablet {
 		-webkit-transform: translateZ(0);
 		-webkit-transition: all 0.5s ease-out;
 		-moz-transition: all 0.5s ease-out;
