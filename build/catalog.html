@@ -136,7 +136,22 @@
         <div class="Block-gydrocycles">
           <div class="Block-gydrocycles__block-headline"> 
             <p class="headline">Гидроциклы</p>
-            <div class="Block-gydrocycles__block-headline_links"> <a class="Block-gydrocycles__block-headline_link width_gydrocycles--frame">Полноприводные</a><a class="Block-gydrocycles__block-headline_link">от 5000</a><a class="Block-gydrocycles__block-headline_link">BRP</a><a class="Block-gydrocycles__block-headline_link">еще</a></div>
+            <div class="Block-gydrocycles__block-headline_links"> 
+              <div class="Block-gydrocycles__links-left-block"><a class="Block-gydrocycles__block-headline_link width_gydrocycles--frame">Полноприводные</a><a class="Block-gydrocycles__block-headline_link">от 5000</a><a class="Block-gydrocycles__block-headline_link">BRP</a><a class="Block-gydrocycles__block-headline_link">еще</a></div>
+              <div class="Block-gydrocycles__block-filter"> 
+                <svg class="vectors_popularity" width="19" height="13" viewbox="0 0 19 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M4.74989 13L4.74989 2.05833L7.70545 5.09167L8.44434 4.33333L4.22211 0L-0.000108719 4.33333L0.73878 5.09167L3.69434 2.05833L3.69434 13H4.74989Z" fill="#C4C4C4"></path>
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M14.2501 0V10.9417L11.2946 7.90833L10.5557 8.66667L14.7779 13L19.0001 8.66667L18.2612 7.90833L15.3057 10.9417V0H14.2501Z" fill="#C4C4C4"></path>
+                </svg>
+                <div class="Block-gydrocycles__popularity">     
+                  <p class="Block-gydrocycles__popularity_text">По полулярности</p>
+                  <svg class="arrow-catalog" width="12" height="8" viewbox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M10.6 0L6 4.6L1.4 0L0 1.4L6 7.4L12 1.4L10.6 0Z" fill="#D7D9DF"></path>
+                  </svg>
+                </div>
+                <div class="Block-gydrocycles__position-blocks"><img src="img/catalog/postion-card.svg"><img class="icon-cards--row" src="img/catalog/postion-icon-cards--row.svg"></div>
+              </div>
+            </div>
           </div>
           <div class="Block-gydrocycles-cards_and_aside">
             <div class="Block-gydrocycles__aside">
@@ -149,7 +164,7 @@
                   <div class="parameters__availability_headline">
                     <div class="dropdown">
                       <input id="checkbox_toggle" type="checkbox"><img class="icon_headline" src="img/catalog/aside/arrow_top.svg" alt="">
-                      <label for="checkbox_toggle">Наличие          </label>
+                      <label class="button--arrow" for="checkbox_toggle">Наличие          </label>
                       <ul class="checkbox-block">
                         <li class="checkbox">             
                           <label for="#availability--yes"> </label>
@@ -164,8 +179,8 @@
                   </div>
                   <div class="parameters__availability_headline">
                     <div class="dropdown">
-                      <input id="checkbox_toggle-2" type="checkbox"><img class="icon_headline" src="img/catalog/aside/arrow_top.svg" alt="">
-                      <label for="checkbox_toggle-2">Новинки          </label>
+                      <input id="checkbox_toggle-2" type="checkbox"><img class="icon_headline icon--new" src="img/catalog/aside/arrow_top.svg" alt="">
+                      <label class="button-arrow-new" for="checkbox_toggle-2">Новинки          </label>
                       <ul class="checkbox-block-2">
                         <li class="checkbox-2">             
                           <label for="#availability--yes"> </label>
@@ -184,11 +199,11 @@
                   </div>
                   <div class="parameters__availability_headline">
                     <div class="dropdown"> 
-                      <input id="checkbox_toggle-7" type="checkbox"><img class="icon_headline" src="img/catalog/aside/arrow_top.svg" alt="">
-                      <label for="checkbox_toggle-7">Цена                           </label>
+                      <input id="checkbox_toggle-7" type="checkbox"><img class="icon_headline icon--price" src="img/catalog/aside/arrow_top.svg" alt="">
+                      <label class="button-arrow-price" for="checkbox_toggle-7">Цена                           </label>
                       <ul class="checkbox-block-7">           
                         <div class="filter">
-                          <div>
+                          <div>               
                             <div class="slider" id="rating">
                               <div class="block-min" onmousedown="moveRange( this);" ontouchstart="moveRange( this);"></div>
                               <div class="color-range"></div>
@@ -224,13 +239,13 @@
                     </div>
                     <div class="engine__power">
                       <div class="engine__power_block"> 
-                        <div class="headline-engine">Мощность двигателя, л.с.</div><img class="icon_headline headline--engine" src="img/catalog/aside/arrow_top.svg" alt="">
+                        <div class="headline-engine">Мощность двигателя, л.с.</div><img class="icon_headline headline--engine" src="img/catalog/aside/arrow_top.svg" alt=""><img class="icon_headline-reverse" src="img/catalog/aside/arrow_top.svg" alt="">
                       </div>
                       <div class="engine__power_stripe"> </div>
                     </div>
                     <div class="engine__power">
                       <div class="engine__power_block"> 
-                        <div class="headline-engine">Макс. скорость </div><img class="icon_headline headline--engine" src="img/catalog/aside/arrow_top.svg" alt="">
+                        <div class="headline-engine">Макс. скорость </div><img class="icon_headline headline--engine" src="img/catalog/aside/arrow_top.svg" alt=""><img class="icon_headline-reverse" src="img/catalog/aside/arrow_top.svg" alt="">
                       </div>
                       <div class="engine__power_stripe"> </div>
                     </div>
@@ -238,8 +253,8 @@
                   <div class="parameters__availability_block brand">
                     <div class="parameters__availability_headline margin-headline--brand">
                       <div class="dropdown">
-                        <input id="checkbox_toggle-3" type="checkbox"><img class="icon_headline" src="img/catalog/aside/arrow_top.svg" alt="">
-                        <label for="checkbox_toggle-3">Бренд           </label>
+                        <input id="checkbox_toggle-3" type="checkbox"><img class="icon_headline icon--brand" src="img/catalog/aside/arrow_top.svg" alt="">
+                        <label class="button-arrow-brand" for="checkbox_toggle-3">Бренд           </label>
                         <ul class="checkbox-block-3">
                           <li class="checkbox-3">             
                             <label for="#availability--yes"> </label>
@@ -260,8 +275,8 @@
                   <div class="parameters__availability_headline">  
                     <div class="parameters__availability_model-list"> 
                       <div class="dropdown">
-                        <input id="checkbox_toggle-4" type="checkbox"><img class="icon_headline" src="img/catalog/aside/arrow_top.svg" alt="">
-                        <label for="checkbox_toggle-4">Модель           </label>
+                        <input id="checkbox_toggle-4" type="checkbox"><img class="icon_headline icon--model" src="img/catalog/aside/arrow_top.svg" alt="">
+                        <label class="button-arrow-model" for="checkbox_toggle-4">Модель           </label>
                         <ul class="checkbox-block-4">
                           <li class="checkbox-4__text-area">
                             <input class="text-area-model" type="textarea" placeholder="Введите модель">
@@ -293,8 +308,8 @@
                   <div class="parameters__availability_block sales">
                     <div class="parameters__availability_headline margin-headline--brand">
                       <div class="dropdown">
-                        <input id="checkbox_toggle-5" type="checkbox"><img class="icon_headline" src="img/catalog/aside/arrow_top.svg" alt="">
-                        <label for="checkbox_toggle-5">Акции </label>
+                        <input id="checkbox_toggle-5" type="checkbox"><img class="icon_headline icon--stocks" src="img/catalog/aside/arrow_top.svg" alt="">
+                        <label class="button-arrow-stocks" for="checkbox_toggle-5">Акции </label>
                         <ul class="checkbox-block-5">             
                           <li class="checkbox-5"><a class="brand--label change_width--brand link__sale" href="#SALE">SALE</a></li>
                           <li class="checkbox-5"><a class="brand--label change_width--brand link__sale NEW" href="#NEW">NEW</a></li>
@@ -306,8 +321,8 @@
                   </div>
                   <div class="parameters__availability_headline">         
                     <div class="dropdown">
-                      <input id="checkbox_toggle-6" type="checkbox"><img class="icon_headline" src="img/catalog/aside/arrow_top.svg" alt="">
-                      <label for="checkbox_toggle-6">Страны            </label>
+                      <input id="checkbox_toggle-6" type="checkbox"><img class="icon_headline icon--countries" src="img/catalog/aside/arrow_top.svg" alt="">
+                      <label class="button-arrow-countries" for="checkbox_toggle-6">Страны            </label>
                       <ul class="checkbox-block-6 checkbox-block-6-width">          
                         <li class="checkbox-6">
                           <label class="brand--label change_width--brand" for="Sea-doo Spark 2"> 
@@ -717,5 +732,6 @@
     <script src="js/mobile-menu.js"></script>
     <script src="js/like.js"> </script>
     <script src="js/load-more.js"> </script>
+    <script src="js/aside_icon_catalog/aside_arrow_catalog.js"></script>
   </body>
 </head>
