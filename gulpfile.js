@@ -20,7 +20,7 @@ function compilePug() {
     .pipe(pug({
             pretty:true
         }))
-    .pipe(gulp.dest('./build'))
+    .pipe(gulp.dest('./'))
     .pipe(browserSync.stream());     
 }
 
@@ -62,7 +62,7 @@ function liveserver() {
 function watcher() {
     browserSync.init({
         server: {
-            baseDir: "./build"
+            baseDir: "./"
         }
     });
     gulp.watch('src/pug/**/*.pug', compilePug);
