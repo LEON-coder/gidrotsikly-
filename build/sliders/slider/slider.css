@@ -374,12 +374,18 @@ h2 {
 }
 
 .slide-content {
-    margin-right: 9px;
-    margin-left: 10px;
+    margin-right: 10px;
+    margin-left: 0px;
+}
+
+.slide-content:nth-child(2) {
+    margin-right: 10px;
+    margin-left: -10px;
 }
 
 .slide-content:nth-child(3) {
     margin-right: 30px;
+    margin-left: -10px;
 }
 
 #slides article:nth-child(1) {

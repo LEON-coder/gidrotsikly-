@@ -1,5 +1,5 @@
 $(document).ready(function(){
-    $(".catalog-content").slice(0, 3).show();
+    $(".catalog-content").slice(1, 4).show();
     $("#loadMore").on("click", function(e){
       e.preventDefault();
       $(".catalog-content:hidden").slice(0, 3).slideDown();

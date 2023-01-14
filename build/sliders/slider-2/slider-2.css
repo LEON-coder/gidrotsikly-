@@ -170,12 +170,6 @@ label, #active, img { -moz-user-select:none;-webkit-user-select:none; }
 }
 
 
-/* Slider Styling */
-
-
-
-
-/* Animation */
 
 #slides-2 .inner-2 {
 	-webkit-transform: translateZ(0);
@@ -228,7 +222,6 @@ label, #active, img { -moz-user-select:none;-webkit-user-select:none; }
 	transition: all 0.5s ease-out;
 }
 
-/* Respond Options */
 
 #desktop:checked ~ #slider-2 {
     max-width: 1170px;
@@ -396,7 +389,7 @@ label, #active, img { -moz-user-select:none;-webkit-user-select:none; }
     	display: none;
 	}
 
-
+	
 }
 
 
