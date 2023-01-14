@@ -54,7 +54,7 @@ function CSScompiling() {
 function liveserver() {
     browserSync.init({
         server: {
-            baseDir: "./build"
+            baseDir: ""
         }
     });
 }

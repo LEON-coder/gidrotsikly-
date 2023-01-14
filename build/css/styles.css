@@ -3625,7 +3625,7 @@ body {
     display: flex;
   }
   .link__show-all-shops_headlinear {
-    display: flex;
+    display: none;
     width: 203px;
     height: 22px;
     font-family: "SF Pro Display";

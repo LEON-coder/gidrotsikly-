@@ -138,6 +138,10 @@ h2 {
 	margin-right: 30px;
 }
 
+.slide-content:last-child {
+    margin-right: 0;
+}
+
 .info {
 	line-height: 20px;
 	margin: 0 0 -150%;
