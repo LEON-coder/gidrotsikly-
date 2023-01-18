@@ -17,6 +17,7 @@
     height: 47px;
 }
 
+
 /* Style the buttons inside the tab */
 .tab button {
     width: 204px;
@@ -267,12 +268,14 @@
 
 
 @media screen and (max-width:450px) {
+       
+    
     .tab {
-        overflow: hidden;
+        overflow: auto;
         display: flex;
         align-items: center;
         height: 47px;
-        width: 100%;
+        width: max-content;
     }
 
     .tab-wrap {
@@ -280,6 +283,7 @@
         display: block;
         margin: 0 auto;
         flex-wrap: wrap;
+        overflow: auto;
     }
 
     .tab button {

@@ -387,9 +387,24 @@ label, #active, img { -moz-user-select:none;-webkit-user-select:none; }
 		height: 10px;
 		background: #bbb;	
     	display: none;
+	}	
+}
+
+
+
+
+@media screen and (min-width: 768px) {
+	#slider {
+		margin: 0 auto;
+		width: 100%;
 	}
 
-	
+	#slider-2 {
+		margin: 0 auto;
+		height: 403px;
+		margin-top: 40px;
+		width: 100%;
+	}
 }
 
 
