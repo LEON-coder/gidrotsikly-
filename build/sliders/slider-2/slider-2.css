@@ -302,6 +302,20 @@ label, #active, img { -moz-user-select:none;-webkit-user-select:none; }
 }
 
 
+@media screen and (max-width: 768px) {
+	#slider {
+		margin: 0 auto;
+		width: 100%;
+	}
+
+	#slider-2 {
+		margin: 0 auto;
+		height: 403px;
+		margin-top: 40px;
+		width: 100%;
+	}
+}
+
 @media screen and (max-width: 450px) {
 
 	.info, #controls-2, #slides-2, #active-2, #active-2 label, .info h3, .desktop, .tablet {
@@ -390,21 +404,20 @@ label, #active, img { -moz-user-select:none;-webkit-user-select:none; }
 	}	
 }
 
+@media screen and (max-width: 375px) {
 
-
-
-@media screen and (min-width: 768px) {
-	#slider {
-		margin: 0 auto;
-		width: 100%;
+	.slide-content-2:nth-child(3) {
+		margin-right: 40px;
+		margin-left: 33px;
 	}
 
-	#slider-2 {
-		margin: 0 auto;
-		height: 403px;
-		margin-top: 40px;
-		width: 100%;
+	#slider-2 #active-2 {
+		margin: 30px auto;
+		display: flex;
+		width: 86px;
+		justify-content: space-between;
 	}
-}
+
+	}
 
 
