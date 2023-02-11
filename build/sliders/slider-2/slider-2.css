@@ -129,10 +129,10 @@ label, #active, img { -moz-user-select:none;-webkit-user-select:none; }
 #slide-3:checked ~ #controls-2 label:nth-child(4), 
 #slide-4:checked ~ #controls-2 label:nth-child(1) 
  {
-	background: url('../slider/arrow-right.png') no-repeat;
-	float: right;
-	margin: 0 -70px 0 0;
-	display: block;
+	background: url(../slider/arrow-right.png) no-repeat;
+    float: right;
+    margin: 0px -70px 0 0;
+    display: block;
 }
 
 
@@ -141,10 +141,10 @@ label, #active, img { -moz-user-select:none;-webkit-user-select:none; }
 #slide-3:checked ~ #controls-2 label:nth-child(2),
 #slide-4:checked ~ #controls-2 label:nth-child(3)
  {
-	background: url('../slider/arrow-left.png') no-repeat;
-	float: left;
-	margin: 0 0 0 -40px;
-	display: block;
+	background: url(../slider/arrow-left.png) no-repeat;
+    float: left;
+    margin: 10px 0 0 -60px;
+    display: block;
 }
 
 #slide-1:checked ~ #active-2 label:nth-child(1),
@@ -156,7 +156,6 @@ label, #active, img { -moz-user-select:none;-webkit-user-select:none; }
 	border-color: #333 !important;
 }
 
-/* Info Box */
 
 .info {
 	line-height: 20px;
@@ -303,11 +302,7 @@ label, #active, img { -moz-user-select:none;-webkit-user-select:none; }
 
 
 @media screen and (max-width: 768px) {
-	#slider {
-		margin: 0 auto;
-		width: 100%;
-	}
-
+	
 	#slider-2 {
 		margin: 0 auto;
 		height: 403px;
@@ -405,11 +400,6 @@ label, #active, img { -moz-user-select:none;-webkit-user-select:none; }
 }
 
 @media screen and (max-width: 375px) {
-
-	.slide-content-2:nth-child(3) {
-		margin-right: 40px;
-		margin-left: 33px;
-	}
 
 	#slider-2 #active-2 {
 		margin: 30px auto;

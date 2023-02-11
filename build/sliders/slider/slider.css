@@ -46,11 +46,6 @@ h2 {
 #slide5:checked ~ #slides .inner { margin-left:-400%; }
 
 
-#overflow {
-	width: 100%;
-	overflow: hidden;
-}
-
 #slides .inner {
 	width: 500%;
 	line-height: 0;
@@ -107,23 +102,19 @@ h2 {
 #slide3:checked ~ #controls label:nth-child(4), 
 #slide4:checked ~ #controls label:nth-child(1) 
  {
-	background: url('../slider/arrow-right.png') no-repeat;
-	float: right;
-	margin: 0 -70px 0 0;
-	display: block;
+	background: url(../slider/arrow-right.png) no-repeat;
+    float: right;
+    margin: 10px -80px 0 0px;
+    display: block;
 }
 
-
-#slide1:checked ~ #controls label:nth-child(4),
-#slide2:checked ~ #controls label:nth-child(1),
-#slide3:checked ~ #controls label:nth-child(2),
-#slide4:checked ~ #controls label:nth-child(3)
- {
-	background: url('../slider/arrow-left.png') no-repeat;
-	float: left;
-	margin: 0 0 0 -40px;
-	display: block;
+#slide1:checked ~ #controls label:nth-child(4), #slide2:checked ~ #controls label:nth-child(1), #slide3:checked ~ #controls label:nth-child(2), #slide4:checked ~ #controls label:nth-child(3) {
+    background: url(../slider/arrow-left.png) no-repeat;
+    float: left;
+    margin: 0px 0 0 -50px;
+    display: block;
 }
+
 
 #slide1:checked ~ #active label:nth-child(1),
 #slide2:checked ~ #active label:nth-child(2),
@@ -302,14 +293,7 @@ h2 {
 		opacity: 0 !important;
 	}
 
-	#slider #controls label {
-		-moz-transform: scale(0.6);
-		-webkit-transform: scale(0.6);
-		-o-transform: scale(0.6);
-		-ms-transform: scale(0.6);
-		transform: scale(0.6);
-	}
-
+	
 	#slide1:checked ~ #slides .inner {
 		margin-left: 0;
 	}
@@ -329,12 +313,7 @@ h2 {
 		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fcfff4', endColorstr='#dbdac9',GradientType=0 );
 	}
 
-#slide1:checked ~ #controls label:nth-child(4), #slide2:checked ~ #controls label:nth-child(1), #slide3:checked ~ #controls label:nth-child(2), #slide4:checked ~ #controls label:nth-child(3) {
-    background: url(../slider/arrow-left.png) no-repeat;
-    float: left;
-    margin: -20px 0 0 -30px;
-    display: block;
-}
+
 
 #overflow {
     width: 100%;
@@ -360,23 +339,27 @@ h2 {
 
 #slides article:nth-child(1) {
     float: left;
-    margin-right: 27px;
+    margin-right: -20px;
     margin-left: 0px;
 }
 
 #slides article:nth-child(2) {
     float: left;
-    margin-right: 27px;
-    margin-left: -5px;
+    margin-right: 40px;
+    margin-left: 20px;
 }
 
 #slides article:nth-child(3) {
     float: left;
     margin-right: 40px;
-    margin-left: 0px;
+    margin-left: -40px;
 }
 
-
+#slides article:nth-child(4) {
+    float: left;
+    margin-right: 40px;
+    margin-left: -40px;
+}
 
 
 @media screen and (max-width: 425px) {
@@ -399,19 +382,21 @@ h2 {
 	}
 
 	#slides {
-        width: 100%;
-        display: flex;
-        height: 403px;
-        background: #fff;
-        /* background: rgb(252,255,244); */
-        background: -moz-linear-gradient(top, rgba(252,255,244,1) 0%, rgba(219,218,201,1) 100%);
-        /* background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(252,255,244,1)), color-stop(100%,rgba(219,218,201,1))); */
-        /* background: -webkit-linear-gradient(top, rgba(252,255,244,1) 0%,rgba(219,218,201,1) 100%); */
-        background: -o-linear-gradient(top, rgba(252,255,244,1) 0%,rgba(219,218,201,1) 100%);
-        background: -ms-linear-gradient(top, rgba(252,255,244,1) 0%,rgba(219,218,201,1) 100%);
-        background: linear-gradient(top, rgba(252,255,244,1) 0%,rgba(219,218,201,1) 100%);
-        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fcfff4', endColorstr='#dbdac9',GradientType=0 );
-    }
+		width: 100%;
+		display: flex;
+		height: 403px;
+		background: #fff;
+		/* background: rgb(252,255,244); */
+		background: -moz-linear-gradient(top, rgba(252,255,244,1) 0%, rgba(219,218,201,1) 100%);
+		/* background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(252,255,244,1)), color-stop(100%,rgba(219,218,201,1))); */
+		/* background: -webkit-linear-gradient(top, rgba(252,255,244,1) 0%,rgba(219,218,201,1) 100%); */
+		background: -o-linear-gradient(top, rgba(252,255,244,1) 0%,rgba(219,218,201,1) 100%);
+		background: -ms-linear-gradient(top, rgba(252,255,244,1) 0%,rgba(219,218,201,1) 100%);
+		background: linear-gradient(top, rgba(252,255,244,1) 0%,rgba(219,218,201,1) 100%);
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fcfff4', endColorstr='#dbdac9',GradientType=0 );
+		margin-left: auto;
+		margin-right: auto;
+	}
 
 	#slide1:checked ~ #controls label:nth-child(2), #slide2:checked ~ #controls label:nth-child(3), #slide3:checked ~ #controls label:nth-child(4), #slide4:checked ~ #controls label:nth-child(1) {
 		background: url(../slider/arrow-right.png) no-repeat;
@@ -427,14 +412,10 @@ h2 {
 		display: none;
 	}
 
-	.slide-content {
-		margin-right: 30px;
-		margin-left: 55px;
-	}
-
+	
 	.slide-content:first-child {
 		margin-right: 5px;
-		margin-left: 60px;
+		margin-left: 40px;
 	}
 
 	.slide-content:nth-child(2) {
@@ -443,8 +424,8 @@ h2 {
 	}
 
 	.slide-content:nth-child(3) {
-		margin-right: 30px;
-		margin-left: 50px;
+		margin-right: 40px;
+		margin-left: 40px;
 	}
 }
 
@@ -466,14 +447,7 @@ h2 {
 		#slider #slides .info {
 		opacity: 0 !important;
 	}
-
-	#slider #controls label {
-		-moz-transform: scale(0.6);
-		-webkit-transform: scale(0.6);
-		-o-transform: scale(0.6);
-		-ms-transform: scale(0.6);
-		transform: scale(0.6);
-	}
+	
 
 	#slide1:checked ~ #slides .inner {
 		margin-left: 0;
@@ -492,6 +466,8 @@ h2 {
 		background: -ms-linear-gradient(top, rgba(252,255,244,1) 0%,rgba(219,218,201,1) 100%);
 		background: linear-gradient(top, rgba(252,255,244,1) 0%,rgba(219,218,201,1) 100%);
 		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fcfff4', endColorstr='#dbdac9',GradientType=0 );
+		margin-left: auto;
+		margin-right: auto;
 	}
 
 #slide1:checked ~ #controls label:nth-child(4), #slide2:checked ~ #controls label:nth-child(1), #slide3:checked ~ #controls label:nth-child(2), #slide4:checked ~ #controls label:nth-child(3) {
@@ -541,7 +517,7 @@ h2 {
 }
 
 .slide-content:nth-child(3) {
-    margin-right: 30px;
+    margin-right: 40px;
     margin-left: 40px;
 }
 
@@ -618,6 +594,8 @@ h2 {
 		background: -ms-linear-gradient(top, rgba(252,255,244,1) 0%,rgba(219,218,201,1) 100%);
 		background: linear-gradient(top, rgba(252,255,244,1) 0%,rgba(219,218,201,1) 100%);
 		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fcfff4', endColorstr='#dbdac9',GradientType=0 );
+		margin-left: auto;
+		margin-right: auto;
 	}
 
 #slide1:checked ~ #controls label:nth-child(4), #slide2:checked ~ #controls label:nth-child(1), #slide3:checked ~ #controls label:nth-child(2), #slide4:checked ~ #controls label:nth-child(3) {
