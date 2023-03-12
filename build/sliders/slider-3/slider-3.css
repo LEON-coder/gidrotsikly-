@@ -18,7 +18,9 @@
   a img {
     border: none; }
 
- 
+ article{
+    width: 100%;
+ }
   
   .slide__section-banners {
     display: flex;
@@ -558,10 +560,36 @@
     -ms-transform: scale(0.8);
     transform: scale(0.8);
 }
-
   }
+
+
+@media screen and (max-width: 768px) {
+
+  #slides__section-banners {
+    width: 100%;
+    display: flex;
+   
+}
+
+#overflow__section-banners {
+    width: 100%;
+    overflow: hidden;
+}
+
+.slide__section-banners {
+    display: flex;
+    width: 100%;
+    height: 400px;
+}
+
+.article {
+    width: 100%;
+}
+}
+
+
   
-  
+
         
         
 
