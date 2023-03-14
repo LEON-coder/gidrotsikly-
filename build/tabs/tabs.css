@@ -300,3 +300,51 @@
         border: none;
     }
 }
+
+
+
+@media screen and (max-width:768px) {
+
+    .tab {
+    overflow: hidden;
+    height: auto;
+    display: flex;
+    align-items: baseline;
+}
+
+.section-block-tabs {
+    display: flex;
+    margin-top: 0px;
+    width: 80%;
+}
+}
+
+@media screen and (max-width:1024px) {
+
+.section-block-tabs {
+    display: flex;
+    margin-top: 0px;
+    width: 80%;
+}
+.tab-wrap {
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+}
+
+.tabcontent {
+    display: none;
+    margin-top: 37px;
+    width: 90%;
+}
+
+.tab {
+    overflow: hidden;
+    height: auto;
+    display: flex;
+    align-items: baseline;
+}
+
+
+}
+

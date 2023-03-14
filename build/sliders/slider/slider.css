@@ -701,6 +701,11 @@ h2 {
     margin: -15px -70px 0 0px;
     display: block;
 }
+
+#slider {
+    margin: 0 auto;
+    width: 80%;
+}
 }
 
 
