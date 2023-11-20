@@ -445,6 +445,22 @@ h2 {
 
 
 
+@media screen and (max-width: 1024px) {
+
+	.slide-content:last-child {
+		display: none;
+	}
+
+	#overflow {
+		width         : 98%;
+		overflow      : hidden;
+		display       : flex;
+		flex-direction: column;
+		padding-left  : 20px;
+	}
+}
+
+
 @media screen and (max-width: 768px) {
 	#slide1:checked~#slides .inner {
 		margin-left: 0;

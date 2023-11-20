@@ -397,11 +397,7 @@ footer {
         flex-wrap      : wrap;
     }
 
-    .banner {
-        width   : 100%;
-        position: relative;
-        height  : auto;
-    }
+
 
     .banner__wrap {
         width          : 100%;
