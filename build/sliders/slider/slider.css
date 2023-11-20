@@ -171,9 +171,6 @@ h2 {
 		justify-content: center;
 	}
 
-	.banner__link {
-		left: 57%;
-	}
 
 	.slide-content-2:first-child {
 		margin-left : auto;
@@ -578,19 +575,30 @@ h2 {
 		align-items    : center;
 	}
 
-
 	.popular-goods__slider_block:first-child {
 		margin-right: 0px;
-		margin-left : -110px;
+		margin-left : 0px;
 	}
 
+	#slide1:checked~#slides .inner {
+		margin-left: 0;
+		width      : 100%;
+		overflow   : hidden;
+	}
 
 }
 
 @media screen and (max-width: 320px) {
+
+	#slide1:checked~#slides .inner {
+		margin-left: 0;
+		width      : 100%;
+		overflow   : hidden;
+	}
+
 	.slide-content {
 		margin-right: 0px;
-		margin-left : 30px;
+		margin-left : -60px;
 	}
 
 	.slide {
@@ -601,13 +609,18 @@ h2 {
 	}
 
 	.slide-content-2:first-child {
-		margin-left : 150px;
+		margin-left : 15px;
 		margin-right: auto;
 	}
 
 	.popular-goods__slider_block:first-child {
 		margin-right: 0px;
 		margin-left : -84px;
+	}
+
+
+	#overflow {
+		padding-left: 0px;
 	}
 
 	.popular-goods__slider_block-2 {

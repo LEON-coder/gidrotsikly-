@@ -520,12 +520,8 @@ img {
 
 
 	#slider-2 {
-		height        : 403px;
-		margin-top    : 40px;
-		display       : flex;
-		position      : relative;
-		flex-direction: column;
-		width         : 100%;
+		height: auto;
+		width : 100%;
 	}
 
 	#slides-2 .article-2 {
@@ -575,6 +571,38 @@ img {
 		display        : flex;
 		width          : 86px;
 		justify-content: space-between;
+	}
+
+	#slider-2 {
+		height        : auto;
+		margin-top    : 40px;
+		display       : flex;
+		position      : relative;
+		flex-direction: column;
+		width         : 100%;
+		padding-left  : 30px;
+		padding-right : 30px;
+	}
+
+}
+
+@media screen and (max-width: 320px) {
+
+	#slider-2 {
+		padding-left : 10px;
+		padding-right: 10px;
+		height       : auto;
+	}
+
+	#slider-2 #active-2 {
+		margin         : 30px auto;
+		display        : flex;
+		width          : 86px;
+		justify-content: space-between;
+	}
+
+	#overflow-2 {
+		height: auto;
 	}
 
 }
