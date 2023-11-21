@@ -620,6 +620,17 @@ footer {
         overflow: hidden;
     }
 
+    .section-banners {
+        display        : flex;
+        width          : 100%;
+        height         : auto;
+        justify-content: center;
+        margin-top     : 64px;
+        padding-left   : 20px;
+        padding-right  : 20px;
+        flex-wrap      : wrap;
+    }
+
     #slider #controls label {
         -moz-transform   : scale(0.6);
         -webkit-transform: scale(0.6);
