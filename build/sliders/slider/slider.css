@@ -599,8 +599,32 @@ h2 {
 	}
 
 	.slide-content {
-		margin-right: 0px;
-		margin-left : -60px;
+		margin-right: 70px;
+		margin-left : -90px;
+	}
+
+	.slide-content:nth-child(2) {
+		margin-right: 90px;
+		margin-left : 60px;
+	}
+
+	.slide-content:nth-child(3) {
+		margin-right: 40px;
+		margin-left : 30px;
+	}
+
+
+
+	#slider #active {
+		margin : 55px auto;
+		display: flex;
+	}
+
+	#slides article:nth-child(2) {
+		float       : left;
+		margin-right: 40px;
+		margin-left : 20px;
+		margin-top  : 40px;
 	}
 
 	.slide {

@@ -601,8 +601,22 @@ img {
 		justify-content: space-between;
 	}
 
+
+	#slider-2 {
+		height        : auto;
+		margin-top    : 40px;
+		display       : flex;
+		position      : relative;
+		flex-direction: column;
+		width         : 100%;
+		padding-left  : 10px;
+		padding-right : 10px;
+	}
+
 	#overflow-2 {
-		height: auto;
+		width   : 100%;
+		overflow: hidden;
+		height  : 403px;
 	}
 
 }
