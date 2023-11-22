@@ -176,11 +176,21 @@ h2 {
 		width         : 270px;
 		height        : 403px;
 		border        : 1px solid #cdcdcd;
-		margin-right  : 30px;
 		align-items   : center;
 		position      : relative;
 		cursor        : pointer;
-		margin-left   : 25px;
+		margin-left   : 15px;
+		margin-right  : 40px;
+	}
+
+	.slide-content-2:nth-child(2) {
+		margin-right: 10px;
+		margin-left : 0px;
+	}
+
+	.slide-content-2:nth-child(3) {
+		margin-right: 40px;
+		margin-left : -20px;
 	}
 
 	.footer__wrap {
@@ -526,6 +536,14 @@ h2 {
 		overflow  : hidden;
 	}
 
+	#slides-2 {
+		width     : 100%;
+		display   : flex;
+		height    : 403px;
+		background: #fff;
+		overflow  : hidden;
+	}
+
 	#slider #active {
 		margin: 55px auto;
 	}
@@ -598,22 +616,20 @@ h2 {
 		overflow   : hidden;
 	}
 
-	.slide-content {
-		margin-right: 70px;
-		margin-left : -90px;
+	.slide-content:first-child {
+		margin-right: 60px;
+		margin-left : -125px;
 	}
 
 	.slide-content:nth-child(2) {
-		margin-right: 90px;
-		margin-left : 60px;
+		margin-right: 75px;
+		margin-left : 50px;
 	}
 
 	.slide-content:nth-child(3) {
-		margin-right: 40px;
-		margin-left : 30px;
+		margin-right: 20px;
+		margin-left : 40px;
 	}
-
-
 
 	#slider #active {
 		margin : 55px auto;
@@ -641,9 +657,8 @@ h2 {
 
 	.popular-goods__slider_block:first-child {
 		margin-right: 0px;
-		margin-left : -84px;
+		margin-left : -70px;
 	}
-
 
 	#overflow {
 		padding-left: 0px;

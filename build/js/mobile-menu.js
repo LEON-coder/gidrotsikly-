@@ -3,10 +3,20 @@ let BurgerMenu = document.querySelector(".mobile-menu");
 let CloseBurger = document.getElementsByTagName("body");
 
 btnMenu.addEventListener("click",function () {
-    BurgerMenu.classList.toggle("show-menu");
+    BurgerMenu.classList.add("show-menu");
     function animation() {
         document.getElementsByClassName('mobile-menu').className = 'show-menu'
     }
     btnMenu.classList.toggle("burger--active");
-    CloseBurger.classList.remove("burger--active");
-})
+
+});
+CloseBurger.addEventListener("click",function () {
+    BurgerMenu.classList.remove("show-menu");
+    function animation() {
+        document.getElementsByClassName('mobile-menu').className = 'show-menu'
+    }
+    btnMenu.classList.remove("burger--active");
+
+});
+
+
