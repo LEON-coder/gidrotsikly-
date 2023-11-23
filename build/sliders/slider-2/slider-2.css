@@ -428,10 +428,12 @@ img {
 @media screen and (max-width: 768px) {
 
 	#slider-2 {
-		margin    : 0 auto;
-		height    : 403px;
-		margin-top: 40px;
-		width     : 80%;
+		margin       : 0 auto;
+		height       : 403px;
+		margin-top   : 40px;
+		width        : 100%;
+		padding-left : 80px;
+		padding-right: 80px;
 	}
 
 	#slide1-1:checked~#controls-2 label:nth-child(4),
@@ -444,13 +446,13 @@ img {
 		display   : block;
 	}
 
-	#slide1:checked~#controls label:nth-child(2),
-	#slide2:checked~#controls label:nth-child(3),
-	#slide3:checked~#controls label:nth-child(4),
-	#slide4:checked~#controls label:nth-child(1) {
+	#slide1-1:checked~#controls-2 label:nth-child(2),
+	#slide2-2:checked~#controls-2 label:nth-child(3),
+	#slide3-3:checked~#controls-2 label:nth-child(4),
+	#slide4-4:checked~#controls-2 label:nth-child(1) {
 		background: url(../slider/arrow-right.png) no-repeat;
 		float     : right;
-		margin    : 0px -70px 0 0px;
+		margin    : 10px -70px 0 0;
 		display   : block;
 	}
 

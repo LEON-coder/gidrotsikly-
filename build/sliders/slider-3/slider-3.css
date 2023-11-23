@@ -329,20 +329,6 @@ footer {
         height : 400px;
     }
 
-    .banner__left_header {
-        position   : absolute;
-        width      : 285px;
-        height     : 150px;
-        font-family: "SF Pro Display";
-        font-style : normal;
-        font-weight: 700;
-        font-size  : 50px;
-        line-height: 50px;
-        text-align : center;
-        color      : #2f3035;
-        top        : 73px;
-        left       : 270px;
-    }
 }
 
 @media screen and (max-width: 768px) {
@@ -388,6 +374,8 @@ footer {
         padding-right  : 20px;
         flex-wrap      : wrap;
     }
+
+
 
 }
 
