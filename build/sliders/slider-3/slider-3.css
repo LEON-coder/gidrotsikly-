@@ -347,14 +347,6 @@ footer {
 
 @media screen and (max-width: 768px) {
 
-    header {
-        width          : 100%;
-        height         : auto;
-        display        : flex;
-        justify-content: center;
-        flex-direction : column;
-    }
-
     #slides__section-banners {
         width  : 100%;
         display: flex;
