@@ -585,13 +585,6 @@ h2 {
 		width     : 100%;
 	}
 
-	#slide1:checked~#slides .inner {
-		margin-left: 0;
-		width      : 100%;
-		overflow-x : scroll;
-		overflow-y : hidden;
-	}
-
 	#slides {
 		width     : 100%;
 		display   : flex;
@@ -609,7 +602,8 @@ h2 {
 	}
 
 	#slider #active {
-		margin: 55px auto;
+		margin : 55px auto;
+		display: none;
 	}
 
 	#slide1:checked~#controls label:nth-child(2),
@@ -640,6 +634,13 @@ h2 {
 	.slide-content-2:nth-child(3) {
 		margin-right: 40px;
 		margin-left : -30px;
+	}
+
+	#slide1:checked~#slides .inner {
+		margin-left: 0;
+		width      : 100%;
+		overflow-x : scroll;
+		overflow-y : clip;
 	}
 
 }
@@ -673,6 +674,11 @@ h2 {
 		align-items    : center;
 	}
 
+	#slider #active {
+		margin : 55px auto;
+		display: none;
+	}
+
 	.popular-goods__slider_block:first-child {
 		margin-right: 0px;
 		margin-left : 0px;
@@ -681,7 +687,8 @@ h2 {
 	#slide1:checked~#slides .inner {
 		margin-left: 0;
 		width      : 100%;
-		overflow   : hidden;
+		overflow-x : scroll;
+		overflow-y : clip;
 	}
 
 }
@@ -691,12 +698,13 @@ h2 {
 	#slide1:checked~#slides .inner {
 		margin-left: 0;
 		width      : 100%;
-		overflow   : hidden;
+		overflow-x : scroll;
+		overflow-y : clip;
 	}
 
 	.slide-content:first-child {
-		margin-right: 40px;
-		margin-left : -114px;
+		margin-right: 60px;
+		margin-left : 210px;
 	}
 
 	.slide-content:nth-child(2) {
@@ -710,12 +718,12 @@ h2 {
 	}
 
 	.slide-content:last-child {
-		display: none;
+		display: flex;
 	}
 
 	#slider #active {
 		margin : 55px auto;
-		display: flex;
+		display: none;
 	}
 
 	#slides article:nth-child(2) {
