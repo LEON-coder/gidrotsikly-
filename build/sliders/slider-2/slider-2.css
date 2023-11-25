@@ -554,12 +554,6 @@ img {
 		overflow-y: clip;
 	}
 
-	#slider-2 #active-2 {
-		margin         : 20px auto;
-		display        : flex;
-		width          : 86px;
-		justify-content: space-between;
-	}
 
 	#slide-1:checked~#active-2 label:nth-child(1),
 	#slide-2:checked~#active-2 label:nth-child(2),

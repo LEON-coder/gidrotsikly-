@@ -1,47 +1,47 @@
 .section-block-tabs {
-    display: flex;
+    display   : flex;
     margin-top: 77px;
 }
 
 .tab-wrap {
-    width: 1170px;
+    width  : 1170px;
     display: block;
-    margin: 0 auto;
+    margin : 0 auto;
 }
 
 /* Style the tab */
 .tab {
-    overflow: hidden;
-    display: flex;
+    overflow   : hidden;
+    display    : flex;
     align-items: center;
-    height: 47px;
+    height     : 47px;
 }
 
 
 /* Style the buttons inside the tab */
 .tab button {
-    width: 204px;
-    height: 47px;
-    background: #ffffff;
-    font-family: 'SF Pro Display';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 24px;
-    color: #2f3035;
+    width       : 204px;
+    height      : 47px;
+    background  : #ffffff;
+    font-family : 'SF Pro Display';
+    font-style  : normal;
+    font-weight : 400;
+    font-size   : 20px;
+    line-height : 24px;
+    color       : #2f3035;
     margin-right: 54px;
-    border: none;
+    border      : none;
 }
 
 .tab button:last-child {
-    width: auto;
-    height: 47px;
+    width       : auto;
+    height      : 47px;
     margin-right: 0;
-    font-family: 'SF Pro Display';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 24px;
+    font-family : 'SF Pro Display';
+    font-style  : normal;
+    font-weight : 400;
+    font-size   : 20px;
+    line-height : 24px;
 }
 
 /* Change background color of buttons on hover */
@@ -49,90 +49,90 @@
 
 /* Create an active/current tablink class */
 .tab button.active {
-    width: 204px;
-    height: 47px;
-    font-family: 'SF Pro Display';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 24px;
-    text-align: center;
-    color: #2f3035;
+    width           : 204px;
+    height          : 47px;
+    font-family     : 'SF Pro Display';
+    font-style      : normal;
+    font-weight     : 700;
+    font-size       : 20px;
+    line-height     : 24px;
+    text-align      : center;
+    color           : #2f3035;
     background-color: #ddd;
 }
 
 .tab button:last-child.active {
-    width: auto;
-    padding-left: 26px;
-    padding-right: 26px;
-    padding-top: 11px;
+    width         : auto;
+    padding-left  : 26px;
+    padding-right : 26px;
+    padding-top   : 11px;
     padding-bottom: 12px;
 }
 
 /* Style the tab content */
 .tabcontent {
-    display: none;
+    display   : none;
     margin-top: 37px;
 }
 
 .area-tab {
-    display: flex;
-    width: 1170px;
-    height: 50px;
-    background: #f0f0f4;
+    display      : flex;
+    width        : 1170px;
+    height       : 50px;
+    background   : #f0f0f4;
     border-radius: 3px;
-    padding-left: 20px;
+    padding-left : 20px;
 }
 
 .tabs__item {
-    width: 214px;
-    height: 47px;
-    font-family: 'SF Pro Display';
-    font-size: 20px;
-    text-align: center;
-    color: #2f3035;
-    background: transparent;
-    border-radius: 5px;
-    margin-right: 28px;
-    display: flex;
+    width          : 214px;
+    height         : 47px;
+    font-family    : 'SF Pro Display';
+    font-size      : 20px;
+    text-align     : center;
+    color          : #2f3035;
+    background     : transparent;
+    border-radius  : 5px;
+    margin-right   : 28px;
+    display        : flex;
     justify-content: center;
-    align-items: center;
-    padding-left: 26px;
-    padding-right: 26px;
-    padding-bottom: 12px;
-    padding-top: 11px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 24px;
+    align-items    : center;
+    padding-left   : 26px;
+    padding-right  : 26px;
+    padding-bottom : 12px;
+    padding-top    : 11px;
+    font-style     : normal;
+    font-weight    : 400;
+    line-height    : 24px;
 }
 
 .tabs__item:hover {
-    width: 214px;
-    height: 47px;
-    background: #f0f0f4;
-    border-radius: 5px;
-    font-family: 'SF Pro Display';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 24px;
-    text-align: center;
-    color: #2f3035;
-    padding-left: 26px;
-    padding-right: 26px;
+    width         : 214px;
+    height        : 47px;
+    background    : #f0f0f4;
+    border-radius : 5px;
+    font-family   : 'SF Pro Display';
+    font-style    : normal;
+    font-weight   : 700;
+    font-size     : 20px;
+    line-height   : 24px;
+    text-align    : center;
+    color         : #2f3035;
+    padding-left  : 26px;
+    padding-right : 26px;
     padding-bottom: 12px;
-    padding-top: 11px;
+    padding-top   : 11px;
 }
 
 .tabs__item:nth-child(3) {
-    width: auto;
+    width       : auto;
     margin-right: 0;
 }
 
 .content {
-    padding: 50px 0;
+    padding  : 50px 0;
     max-width: 1170px;
-    margin: 0 auto;
+    margin   : 0 auto;
 }
 
 .tabs {
@@ -144,120 +144,121 @@
 }
 
 .tabs__block {
-    position: relative;
-    font-size: 18px;
+    position   : relative;
+    font-size  : 18px;
     line-height: 24px;
-    margin-top: 0;
+    margin-top : 0;
 }
 
 .tabs__block:before {
     font-family: 'SF Pro Display';
-    font-style: normal;
+    font-style : normal;
     font-weight: 700;
-    font-size: 20px;
-    text-align: center;
-    color: #2f3035;
-    content: '';
-    height: 50px;
-    width: 33, 33%;
-    position: absolute;
-    top: -50px;
+    font-size  : 20px;
+    text-align : center;
+    color      : #2f3035;
+    content    : '';
+    height     : 50px;
+    width      : 33, 33%;
+    position   : absolute;
+    top        : -50px;
 }
 
 .tabs__block:nth-child(1):before {
-    content: '';
-    left: 0;
-    height: 24px;
+    content    : '';
+    left       : 0;
+    height     : 24px;
     font-family: 'SF Pro Display';
-    font-style: normal;
+    font-style : normal;
     font-weight: 700;
-    font-size: 20px;
+    font-size  : 20px;
     line-height: 24px;
-    text-align: center;
-    color: #2f3035;
+    text-align : center;
+    color      : #2f3035;
 }
 
 .tabs__block:nth-child(2):before {
     background-color: #1c62cd;
-    left: 33, 333%;
-    font-weight: 700;
+    left            : 33, 333%;
+    font-weight     : 700;
 }
 
 .tabs__block:nth-child(3):before {
     background-color: green;
-    font-weight: 700;
+    font-weight     : 700;
 }
+
 .tabs__block:nth-child(3) {
     background-color: green;
 }
 
 .tabs__block:target {
-    display: flex;
+    display    : flex;
     font-family: 'SF Pro Display';
-    font-style: normal;
+    font-style : normal;
     font-weight: 700;
-    font-size: 20px;
+    font-size  : 20px;
     line-height: 24px;
-    text-align: center;
-    color: #2f3035;
-    height: 50px;
+    text-align : center;
+    color      : #2f3035;
+    height     : 50px;
 }
 
 .section__tab:nth-child(3) {
-    height: 24px;
-    width: 238px;
+    height      : 24px;
+    width       : 238px;
     margin-right: 0;
 }
 
 .section__search--area {
-    width: 1170px;
-    height: 50px;
-    margin-top: 25px;
+    width                : 1170px;
+    height               : 50px;
+    margin-top           : 25px;
     -webkit-border-radius: 3px;
-    -moz-border-radius: 3px;
-    -ms-border-radius: 3px;
-    -o-border-radius: 3px;
-    display: flex;
+    -moz-border-radius   : 3px;
+    -ms-border-radius    : 3px;
+    -o-border-radius     : 3px;
+    display              : flex;
 }
 
 .section__search--tabs {
-    display: flex;
-    max-width: 1170px;
+    display       : flex;
+    max-width     : 1170px;
     flex-direction: column;
 }
 
 .area {
-    display: flex;
-    width: 1025px;
-    height: 50px;
-    background: #f0f0f4;
-    border-top-left-radius: 3px;
-    border-bottom-left-radius: 3px;
-    border-top-right-radius: 0;
+    display                   : flex;
+    width                     : 1025px;
+    height                    : 50px;
+    background                : #f0f0f4;
+    border-top-left-radius    : 3px;
+    border-bottom-left-radius : 3px;
+    border-top-right-radius   : 0;
     border-bottom-right-radius: 0;
 }
 
 .button-search {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 50px;
-    width: 145px;
-    background: #1c62cd;
-    border-radius: 3px;
-    font-family: 'SF Pro Display';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 17px;
-    letter-spacing: 0.12em;
-    text-transform: uppercase;
-    color: #ffffff;
-    transition: 1s;
+    display           : flex;
+    justify-content   : center;
+    align-items       : center;
+    height            : 50px;
+    width             : 145px;
+    background        : #1c62cd;
+    border-radius     : 3px;
+    font-family       : 'SF Pro Display';
+    font-style        : normal;
+    font-weight       : 700;
+    font-size         : 14px;
+    line-height       : 17px;
+    letter-spacing    : 0.12em;
+    text-transform    : uppercase;
+    color             : #ffffff;
+    transition        : 1s;
     -webkit-transition: 1s;
-    -moz-transition: 1s;
-    -ms-transition: 1s;
-    -o-transition: 1s;
+    -moz-transition   : 1s;
+    -ms-transition    : 1s;
+    -o-transition     : 1s;
 }
 
 .area {
@@ -268,36 +269,36 @@
 
 
 @media screen and (max-width:450px) {
-       
-    
+
+
     .tab {
-        overflow: auto;
-        display: flex;
+        overflow   : auto;
+        display    : flex;
         align-items: center;
-        height: 47px;
-        width: max-content;
+        height     : 47px;
+        width      : max-content;
     }
 
     .tab-wrap {
-        width: 90%;
-        display: block;
-        margin: 0 auto;
+        width    : 90%;
+        display  : block;
+        margin   : 0 auto;
         flex-wrap: wrap;
-        overflow: auto;
+        overflow : auto;
     }
 
     .tab button {
-        width: auto;
-        height: 47px;
-        background: #ffffff;
-        font-family: 'SF Pro Display';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 20px;
-        line-height: 24px;
-        color: #2f3035;
+        width       : auto;
+        height      : 47px;
+        background  : #ffffff;
+        font-family : 'SF Pro Display';
+        font-style  : normal;
+        font-weight : 400;
+        font-size   : 20px;
+        line-height : 24px;
+        color       : #2f3035;
         margin-right: 10px;
-        border: none;
+        border      : none;
     }
 }
 
@@ -306,45 +307,71 @@
 @media screen and (max-width:768px) {
 
     .tab {
-    overflow: hidden;
-    height: auto;
-    display: flex;
-    align-items: baseline;
-}
+        overflow   : hidden;
+        height     : auto;
+        display    : flex;
+        align-items: baseline;
+    }
 
-.section-block-tabs {
-    display: flex;
-    margin-top: 0px;
-    width: 80%;
-}
+    .section-block-tabs {
+        display   : flex;
+        margin-top: 0px;
+        width     : 80%;
+    }
 }
 
 @media screen and (max-width:1024px) {
 
-.section-block-tabs {
-    display: flex;
-    margin-top: 0px;
-    width: 80%;
-}
-.tab-wrap {
-    width: 100%;
-    display: block;
-    margin: 0 auto;
-}
+    .section-block-tabs {
+        display   : flex;
+        margin-top: 88px;
+        width     : 100%;
+    }
 
-.tabcontent {
-    display: none;
-    margin-top: 37px;
-    width: 90%;
+    .tab-wrap {
+        width        : 100%;
+        padding-left : 30px;
+        padding-right: 30px;
+    }
+
+    .tabcontent {
+        display   : none;
+        margin-top: 37px;
+        width     : 100%;
+    }
+
+    .tab {
+        overflow       : hidden;
+        height         : auto;
+        display        : flex;
+        align-items    : baseline;
+        justify-content: space-between;
+        padding-left   : 0;
+        padding-right  : 0;
+    }
+
+    .tabs__block {
+        width       : 100%;
+        padding-left: 0px;
+    }
+
+    .section__search--area {
+        width                : 100%;
+        height               : 50px;
+        margin-top           : 25px;
+        -webkit-border-radius: 3px;
+        -moz-border-radius   : 3px;
+        -ms-border-radius    : 3px;
+        -o-border-radius     : 3px;
+        display              : flex;
+    }
+
+    .area-tab {
+        display      : flex;
+        width        : 90%;
+        height       : 50px;
+        background   : #f0f0f4;
+        border-radius: 3px;
+        padding-left : 20px;
+    }
 }
-
-.tab {
-    overflow: hidden;
-    height: auto;
-    display: flex;
-    align-items: baseline;
-}
-
-
-}
-
