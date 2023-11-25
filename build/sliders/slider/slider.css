@@ -153,50 +153,7 @@ h2 {
 	margin-right: 30px;
 }
 
-@media screen and (max-width: 425px) {
 
-	.slide-content {
-		margin-right: 30px;
-		margin-left : 0;
-	}
-
-	.popular-goods__slider_block:first-child {
-		margin-right: 0px;
-		margin-left : 0px;
-	}
-
-	.slide-content-2:first-child {
-		margin-left : auto;
-		margin-right: auto;
-	}
-
-	.popular-goods__slider_block-2 {
-		flex-direction: column;
-		display       : flex;
-		width         : 270px;
-		height        : 403px;
-		border        : 1px solid #cdcdcd;
-		align-items   : center;
-		position      : relative;
-		cursor        : pointer;
-		margin-left   : 15px;
-		margin-right  : 40px;
-	}
-
-	.slide-content-2:nth-child(2) {
-		margin-right: 10px;
-		margin-left : 0px;
-	}
-
-	.slide-content-2:nth-child(3) {
-		margin-right: 40px;
-		margin-left : -20px;
-	}
-
-	.footer__wrap {
-		padding-left: 0;
-	}
-}
 
 .slide-content:last-child {
 	margin-right: 0;
@@ -430,17 +387,98 @@ h2 {
 	margin-left : -40px;
 }
 
+.banner__left_header {
+	top : 13px;
+	left: 194px;
+}
+
+.banner__left_header-2 {
+	width      : 175px;
+	height     : auto;
+	font-size  : 20px;
+	line-height: 20px;
+	top        : 20px;
+	left       : 150px;
+}
 
 
+@media screen and (max-width: 1440px) {
 
+	.banner__left_header {
+		position   : absolute;
+		width      : 285px;
+		height     : 150px;
+		font-family: "SF Pro Display";
+		font-style : normal;
+		font-weight: 700;
+		font-size  : 50px;
+		line-height: 50px;
+		text-align : center;
+		color      : #2f3035;
+		top        : 40px;
+		left       : 470px;
+	}
 
+	.banner__left_header-2 {
+		position   : absolute;
+		width      : 375px;
+		height     : 150px;
+		font-family: "SF Pro Display";
+		font-style : normal;
+		font-weight: 700;
+		font-size  : 50px;
+		line-height: 50px;
+		text-align : center;
+		color      : #2f3035;
+		top        : 20px;
+		left       : -26px;
+	}
 
+	.banner__left_header-3 {
+		position   : absolute;
+		width      : 285px;
+		height     : 150px;
+		font-family: "SF Pro Display";
+		font-style : normal;
+		font-weight: 700;
+		font-size  : 50px;
+		line-height: 50px;
+		text-align : center;
+		color      : #2f3035;
+		top        : 30px;
+		left       : 44px;
+	}
 
+	.banner__left_header-4 {
+		position   : absolute;
+		width      : 285px;
+		height     : 150px;
+		font-family: "SF Pro Display";
+		font-style : normal;
+		font-weight: 700;
+		font-size  : 50px;
+		line-height: 50px;
+		text-align : center;
+		color      : #2f3035;
+		top        : 30px;
+		left       : 30px;
+	}
 
-
-
-
-
+	.banner__left_header-5 {
+		position   : absolute;
+		width      : 285px;
+		height     : 150px;
+		font-family: "SF Pro Display";
+		font-style : normal;
+		font-weight: 700;
+		font-size  : 50px;
+		line-height: 50px;
+		text-align : center;
+		color      : #2f3035;
+		top        : 20px;
+		left       : 25px;
+	}
+}
 
 
 
@@ -487,6 +525,32 @@ h2 {
 		margin: 0 auto;
 		width : 80%;
 	}
+
+	#slider #active {
+		margin-top  : 220px;
+		display     : flex;
+		margin-left : auto;
+		margin-right: auto;
+	}
+
+	.popular-goods__slider_block-2:nth-child(2) {
+		margin-left : 0;
+		margin-right: 0;
+	}
+
+	.slide-content:last-child {
+		display: flex;
+	}
+
+	#overflow {
+		width         : 100%;
+		overflow      : hidden;
+		display       : flex;
+		flex-direction: column;
+		padding-left  : 20px;
+	}
+
+
 }
 
 
@@ -568,24 +632,38 @@ h2 {
 		display   : none;
 	}
 
+	.slide-content-2:nth-child(2) {
+		margin-right: 10px;
+		margin-left : -20px;
+	}
+
+	.slide-content-2:nth-child(3) {
+		margin-right: 40px;
+		margin-left : -30px;
+	}
 
 }
 
 
 @media screen and (max-width: 375px) {
-	.slide-content {
-		margin-right: -30px;
-		margin-left : 0;
+	.slide-content:first-child {
+		margin-right: -35px;
+		margin-left : 350px;
 	}
 
 	.slide-content:nth-child(2) {
-		margin-right: 20px;
-		margin-left : 230px;
+		margin-right: 40px;
+		margin-left : 120px;
 	}
 
 	.slide-content:nth-child(3) {
 		margin-right: 40px;
 		margin-left : 40px;
+	}
+
+	.slide-content:last-child {
+		display    : flex;
+		margin-left: 170px;
 	}
 
 	.slide {
@@ -617,18 +695,22 @@ h2 {
 	}
 
 	.slide-content:first-child {
-		margin-right: 60px;
-		margin-left : -125px;
+		margin-right: 40px;
+		margin-left : -114px;
 	}
 
 	.slide-content:nth-child(2) {
-		margin-right: 75px;
-		margin-left : 50px;
+		margin-right: 80px;
+		margin-left : 75px;
 	}
 
 	.slide-content:nth-child(3) {
 		margin-right: 20px;
 		margin-left : 40px;
+	}
+
+	.slide-content:last-child {
+		display: none;
 	}
 
 	#slider #active {
@@ -650,14 +732,9 @@ h2 {
 		align-items    : center;
 	}
 
-	.slide-content-2:first-child {
-		margin-left : 15px;
-		margin-right: auto;
-	}
-
 	.popular-goods__slider_block:first-child {
 		margin-right: 0px;
-		margin-left : -70px;
+		margin-left : -100px;
 	}
 
 	#overflow {
