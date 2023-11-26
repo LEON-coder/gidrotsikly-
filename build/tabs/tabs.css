@@ -270,13 +270,15 @@
 
 @media screen and (max-width:450px) {
 
-
     .tab {
-        overflow   : auto;
-        display    : flex;
-        align-items: center;
-        height     : 47px;
-        width      : max-content;
+        overflow       : hidden;
+        height         : auto;
+        display        : flex;
+        align-items    : baseline;
+        justify-content: space-between;
+        padding-left   : 0;
+        padding-right  : 0;
+        flex-direction : column;
     }
 
     .tab-wrap {
@@ -311,6 +313,10 @@
         height     : auto;
         display    : flex;
         align-items: baseline;
+    }
+
+    .tab button.active {
+        height: auto;
     }
 
     .section-block-tabs {

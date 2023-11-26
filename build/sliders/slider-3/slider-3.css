@@ -346,9 +346,22 @@ footer {
 
 @media screen and (max-width: 768px) {
 
+    .slide-content__section-banners {
+        margin-right: 0;
+        position    : relative;
+        width       : 100%;
+    }
+
     #slides__section-banners {
         width  : 100%;
         display: flex;
+    }
+
+    #slides__section-banners .article__section-banners {
+        float       : left;
+        margin-right: 0px;
+        margin-left : 0px;
+        width       : 20%;
     }
 
     #overflow__section-banners {
