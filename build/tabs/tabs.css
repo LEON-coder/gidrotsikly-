@@ -281,6 +281,11 @@
         flex-direction : column;
     }
 
+
+    .tab button.active {
+        height: 47px;
+    }
+
     .tab-wrap {
         width    : 90%;
         display  : block;
@@ -301,6 +306,17 @@
         color       : #2f3035;
         margin-right: 10px;
         border      : none;
+    }
+
+    .tabcontent {
+        display   : none;
+        margin-top: 37px;
+        width     : 100%;
+    }
+
+    .tabs__block {
+        width       : 100%;
+        padding-left: 0px;
     }
 }
 

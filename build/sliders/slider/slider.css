@@ -388,8 +388,18 @@ h2 {
 }
 
 .banner__left_header {
-	top : 13px;
-	left: 194px;
+	position   : absolute;
+	width      : 285px;
+	height     : 150px;
+	font-family: "SF Pro Display";
+	font-style : normal;
+	font-weight: 700;
+	font-size  : 50px;
+	line-height: 50px;
+	text-align : center;
+	color      : #2f3035;
+	top        : 73px;
+	left       : 434px;
 }
 
 .banner__left_header-2 {
