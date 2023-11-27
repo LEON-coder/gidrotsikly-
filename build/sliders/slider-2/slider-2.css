@@ -359,7 +359,11 @@ img {
 	transform        : scale(0.6);
 }
 
-
+.catalog-like {
+	width  : 22px;
+	height : 24px;
+	z-index: 6;
+}
 
 @media screen and (max-width: 1024px) {
 
