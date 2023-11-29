@@ -10,8 +10,20 @@ const { stream } = require("browser-sync");
 const browserSync = require('browser-sync').create();
 const imagemin = require("gulp-imagemin");
 const sourcemaps = require('gulp-sourcemaps');
+const ttf2woff = require('gulp-ttf2woff');
+const ttf2woff2 = require('gulp-ttf2woff2');
 
+function ttf2woff2Converter() {
+    return gulp.src("src/*.ttf")
+        .pipe(ttf2woff2())
+        .pipe(gulp.dest("build/fonts/"));
+}
 
+function ttf2woffConverter() {
+    return gulp.src("src/*.ttf")
+        .pipe(ttf2woff())
+        .pipe(gulp.dest("build/fonts/"));
+}
 
 
 
@@ -93,4 +105,4 @@ function imageCompressing() {
         .pipe(gulp.dest('./build/img'));
 }
 
-exports.default = gulp.parallel(compilePug,CSScompiling,script,watcher,imageCompressing);
+exports.default = gulp.parallel(ttf2woff2Converter,ttf2woffConverter,compilePug,CSScompiling,script,watcher,imageCompressing);
