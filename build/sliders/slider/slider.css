@@ -263,8 +263,7 @@ h2 {
 }
 
 .desktop:hover,
-.tablet:hover,
-.mobile:hover {
+.tablet:hover {
 	opacity: 0.2;
 }
 
