@@ -159,7 +159,7 @@
     color      : #2f3035;
     content    : '';
     height     : 50px;
-    width      : 33, 33%;
+    width      : 33%;
     position   : absolute;
     top        : -50px;
 }
@@ -179,7 +179,7 @@
 
 .tabs__block:nth-child(2):before {
     background-color: #1c62cd;
-    left            : 33, 333%;
+    left            : 33%;
     font-weight     : 700;
 }
 
