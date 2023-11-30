@@ -402,12 +402,63 @@ h2 {
 }
 
 .banner__left_header-2 {
-	width      : 175px;
-	height     : auto;
-	font-size  : 20px;
-	line-height: 20px;
-	top        : 20px;
-	left       : 150px;
+	position   : absolute;
+	width      : 285px;
+	height     : 150px;
+	font-family: "SF Pro Display";
+	font-style : normal;
+	font-weight: 700;
+	font-size  : 50px;
+	line-height: 50px;
+	text-align : center;
+	color      : #2f3035;
+	top        : 23px;
+	left       : 555px;
+}
+
+.banner__left_header-3 {
+	position   : absolute;
+	width      : 285px;
+	height     : 150px;
+	font-family: "SF Pro Display";
+	font-style : normal;
+	font-weight: 700;
+	font-size  : 50px;
+	line-height: 50px;
+	text-align : center;
+	color      : #2f3035;
+	top        : 23px;
+	left       : 555px;
+}
+
+.banner__left_header-4 {
+	position   : absolute;
+	width      : 285px;
+	height     : 150px;
+	font-family: "SF Pro Display";
+	font-style : normal;
+	font-weight: 700;
+	font-size  : 50px;
+	line-height: 50px;
+	text-align : center;
+	color      : #2f3035;
+	top        : 23px;
+	left       : 555px;
+}
+
+.banner__left_header-5 {
+	position   : absolute;
+	width      : 285px;
+	height     : 150px;
+	font-family: "SF Pro Display";
+	font-style : normal;
+	font-weight: 700;
+	font-size  : 50px;
+	line-height: 50px;
+	text-align : center;
+	color      : #2f3035;
+	top        : 23px;
+	left       : 555px;
 }
 
 
