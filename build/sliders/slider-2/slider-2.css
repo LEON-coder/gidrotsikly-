@@ -64,7 +64,7 @@ img {
 #slider-2 {
 	margin    : 0 auto;
 	height    : 403px;
-	margin-top: 40px;
+	margin-top: 0px;
 }
 
 #description {
@@ -78,6 +78,8 @@ img {
 	margin   : 0 auto;
 	max-width: 370px;
 }
+
+
 
 
 
