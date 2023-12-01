@@ -775,8 +775,7 @@ h2 {
 	#slide1:checked~#slides .inner {
 		margin-left: 0;
 		width      : 100%;
-		overflow-x : scroll;
-		overflow-y : clip;
+		overflow-x : hidden;
 	}
 
 	.slide-content:first-child {
@@ -800,7 +799,7 @@ h2 {
 
 	#slider #active {
 		margin : 55px auto;
-		display: none;
+		display: flex;
 	}
 
 	#slides article:nth-child(2) {

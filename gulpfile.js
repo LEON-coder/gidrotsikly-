@@ -105,4 +105,4 @@ function imageCompressing() {
         .pipe(gulp.dest('./build/img'));
 }
 
-exports.default = gulp.parallel(ttf2woff2Converter,ttfwoffConverter,compilePug,CSScompiling,script,watcher,imageCompressing,liveserver);
+exports.default = gulp.parallel(ttf2woff2Converter,ttf2woffConverter,compilePug,CSScompiling,script,watcher,imageCompressing);
