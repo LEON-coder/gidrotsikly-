@@ -254,7 +254,8 @@ footer {
 }
 
 #mobile:checked~#slider #active {
-    margin: 23% 0 0;
+    margin          : 23% 0 0;
+    background-color: blue;
 }
 
 #mobile:checked~#slider #slides .info {

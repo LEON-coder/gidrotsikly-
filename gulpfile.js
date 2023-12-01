@@ -83,6 +83,7 @@ function watcher() {
     gulp.watch('src/scss/**/*scss',CSScompiling);
     gulp.watch('build/*.html').on('change',browserSync.reload);
     gulp.watch('src/img/**/*.{jpg,png,gif,svg}',imageCompressing);
+    gulp.watch('src/fonts/*.ttf',ttf2woff2Converter);
     gulp.watch('src/js',script);
 }
 

@@ -625,11 +625,7 @@ h2 {
 	}
 
 	#overflow {
-		width         : 100%;
-		overflow      : hidden;
-		display       : flex;
-		flex-direction: column;
-		padding-left  : 20px;
+		width: 100%;
 	}
 
 
@@ -655,11 +651,6 @@ h2 {
 		width: 0;
 	}
 
-	#slider::-webkit-scrollbar {
-		width: 0;
-	}
-
-
 	#slider-2 {
 		margin    : 0 auto;
 		height    : 403px;
@@ -684,8 +675,10 @@ h2 {
 	}
 
 	#slider #active {
-		margin : 55px auto;
-		display: none;
+		margin         : 0 auto;
+		display        : flex;
+		justify-content: center;
+		align-items    : center;
 	}
 
 	#slide1:checked~#controls label:nth-child(2),
@@ -721,8 +714,7 @@ h2 {
 	#slide1:checked~#slides .inner {
 		margin-left: 0;
 		width      : 100%;
-		overflow-x : scroll;
-		overflow-y : clip;
+		overflow   : hidden;
 	}
 
 }
@@ -749,23 +741,9 @@ h2 {
 		margin-left: 170px;
 	}
 
-	.slide {
-		display        : flex;
-		width          : 1170px;
-		justify-content: center;
-		align-items    : center;
-	}
-
 	.popular-goods__slider_block:first-child {
 		margin-right: 0px;
 		margin-left : 0px;
-	}
-
-	#slide1:checked~#slides .inner {
-		margin-left: 0;
-		width      : 100%;
-		overflow-x : scroll;
-		overflow-y : clip;
 	}
 
 }
@@ -775,7 +753,7 @@ h2 {
 	#slide1:checked~#slides .inner {
 		margin-left: 0;
 		width      : 100%;
-		overflow-x : hidden;
+		overflow   : hidden;
 	}
 
 	.slide-content:first-child {

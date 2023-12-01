@@ -147,10 +147,10 @@ img {
 }
 
 #active-2 {
-	margin    : 23% 0 0;
-	text-align: center;
-	cursor    : pointer;
-	display   : none;
+	margin         : 23% 0 0;
+	text-align     : center;
+	display        : flex;
+	justify-content: center;
 }
 
 
@@ -162,6 +162,7 @@ img {
 	width                : 10px;
 	height               : 10px;
 	background           : #bbb;
+	cursor               : pointer;
 }
 
 #active-2 label:hover {
@@ -481,20 +482,12 @@ img {
 
 @media screen and (max-width: 450px) {
 
-	.info,
-	#controls-2,
-	#slides-2,
-	#active-2,
-	#active-2 label,
-	.info h3,
-	.desktop,
-	.tablet {
-		-webkit-transform : translateZ(0);
-		-webkit-transition: all 0.5s ease-out;
-		-moz-transition   : all 0.5s ease-out;
-		-o-transition     : all 0.5s ease-out;
-		transition        : all 0.5s ease-out;
-		margin-left       : 0;
+	#active-2 {
+		margin         : 20px 0 0;
+		text-align     : center;
+		display        : flex;
+		justify-content: space-between;
+		width          : 86px;
 	}
 
 	#controls-2 {
@@ -502,12 +495,6 @@ img {
 		width  : 90%;
 		height : 50px;
 		display: none;
-	}
-
-	#slider-2 #active-2 {
-		margin : 30px auto;
-		display: none;
-		width  : 86px;
 	}
 
 	#slide-1:checked~#controls-2 label:nth-child(4),
@@ -532,19 +519,19 @@ img {
 		transform        : scale(0.6);
 	}
 
-
-	#slider-2 {
-		height: auto;
-		width : 100%;
+	.slide-content-2 {
+		margin-left: 440px;
 	}
 
+
 	#slider-2 {
-		margin       : 0 auto;
-		height       : auto;
-		margin-top   : 40px;
-		width        : 100%;
-		padding-left : 60px;
-		padding-right: 60px;
+		height        : auto;
+		display       : flex;
+		position      : relative;
+		flex-direction: column;
+		padding-left  : 10px;
+		padding-right : 10px;
+		align-items   : center;
 	}
 
 	#slides-2 .article-2 {
@@ -554,10 +541,10 @@ img {
 	}
 
 	#overflow-2 {
-		width     : 100%;
-		overflow-x: scroll;
-		height    : 403px;
-		overflow-y: clip;
+		width          : 100%;
+		height         : 403px;
+		display        : flex;
+		justify-content: center;
 	}
 
 
@@ -583,23 +570,6 @@ img {
 
 @media screen and (max-width: 375px) {
 
-	#slider-2 #active-2 {
-		margin : 30px auto;
-		display: none;
-		width  : 86px;
-	}
-
-	#slider-2 {
-		height        : auto;
-		margin-top    : 40px;
-		display       : flex;
-		position      : relative;
-		flex-direction: column;
-		width         : 100%;
-		padding-left  : 30px;
-		padding-right : 30px;
-	}
-
 	.slide-content-2:first-child {
 		margin-left : 140px;
 		margin-right: 110px;
@@ -615,43 +585,46 @@ img {
 		margin-left : -55px;
 	}
 
-	#overflow-2 {
-		width     : 100%;
-		overflow-x: scroll;
-		height    : 403px;
-		overflow-y: clip;
-	}
-
 }
 
 @media screen and (max-width: 320px) {
 
 	#slider-2 #active-2 {
-		margin : 30px auto;
-		display: none;
-		width  : 86px;
+		margin         : 30px auto;
+		display        : flex;
+		width          : 86px;
+		justify-content: space-between;
 	}
 
 
 	#slider-2 {
 		height        : auto;
-		margin-top    : 0px;
+		margin-top    : 40px;
 		display       : flex;
 		position      : relative;
 		flex-direction: column;
 		width         : 100%;
+		padding-left  : 10px;
+		padding-right : 10px;
 	}
 
 	#overflow-2 {
-		width     : 100%;
-		overflow-x: scroll;
-		height    : 403px;
-		overflow-y: clip;
+		width   : 100%;
+		height  : 403px;
+		overflow: hidden;
+	}
+
+	#slide1-1:checked~#slides-2 .inner-2 {
+		margin-left: 448%;
 	}
 
 	.slide-content-2:first-child {
-		margin-left : 105px;
-		margin-right: 40px;
+		margin-left : -222px;
+		margin-right: 110px;
+	}
+
+	.slide-content-2 {
+		margin-left: -30px;
 	}
 
 	.slide-content-2:nth-child(2) {
