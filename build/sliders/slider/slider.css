@@ -751,9 +751,13 @@ h2 {
 		display   : none;
 	}
 
+	#slide1-1:checked~#slides-2 .inner-2 {
+		margin-left: 0;
+	}
+
 	.slide-content-2:nth-child(2) {
 		margin-right: 10px;
-		margin-left : -20px;
+		margin-left : 40px;
 	}
 
 	.slide-content-2:nth-child(3) {
