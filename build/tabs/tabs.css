@@ -281,9 +281,9 @@
         flex-direction : column;
     }
 
-
     .tab button.active {
-        height: 47px;
+        height : auto;
+        padding: 10px;
     }
 
     .tab-wrap {
@@ -332,7 +332,8 @@
     }
 
     .tab button.active {
-        height: auto;
+        height : auto;
+        padding: 10px;
     }
 
     .section-block-tabs {
