@@ -427,15 +427,6 @@ footer {
         width       : 100%;
     }
 
-    #section-banners--slide-1:checked~#active__section-banners label:nth-child(1),
-    #section-banners--slide-2:checked~#active__section-banners label:nth-child(2),
-    #section-banners--slide-3:checked~#active__section-banners label:nth-child(3),
-    #section-banners--slide-4:checked~#active__section-banners label:nth-child(4),
-    #section-banners--slide-5:checked~#active__section-banners label:nth-child(5),
-    #section-banners--slide-6:checked~#active__section-banners label:nth-child(6) {
-        background: #ffffff;
-    }
-
     #overflow__section-banners {
         width   : 100%;
         overflow: hidden;
@@ -492,111 +483,6 @@ footer {
     }
 }
 
-@media screen and (max-width: 375px) {
-    #overflow__section-banners {
-        width   : 100%;
-        overflow: hidden;
-    }
-
-    #slider #controls label {
-        -moz-transform   : scale(0.6);
-        -webkit-transform: scale(0.6);
-        -o-transform     : scale(0.6);
-        -ms-transform    : scale(0.6);
-        transform        : scale(0.6);
-    }
-
-    .slide__section-banners {
-        display: flex;
-        width  : 100%;
-        height : auto;
-    }
-
-    #controls__section-banners {
-        margin : -25% 0 0 0;
-        width  : 100%;
-        height : 30px;
-        display: none;
-    }
-
-    .slide-content__section-banners {
-        margin-right: 0;
-        position    : relative;
-        width       : 100%;
-    }
-
-    #active__section-banners {
-        margin: 0;
-    }
-
-    #slides__section-banners .article__section-banners {
-        float       : left;
-        margin-right: 0;
-        margin-left : 0;
-        width       : 100%;
-    }
-
-    #section-banners--slide-1:checked~#active__section-banners label:nth-child(1),
-    #section-banners--slide-2:checked~#active__section-banners label:nth-child(2),
-    #section-banners--slide-3:checked~#active__section-banners label:nth-child(3),
-    #section-banners--slide-4:checked~#active__section-banners label:nth-child(4),
-    #section-banners--slide-5:checked~#active__section-banners label:nth-child(5),
-    #section-banners--slide-6:checked~#active__section-banners label:nth-child(6) {
-        background: #ffffff;
-    }
-
-    #overflow__section-banners {
-        width   : 100%;
-        overflow: hidden;
-    }
-
-    #slides__section-banners {
-        width        : 100%;
-        display      : flex;
-        height       : 146px;
-        background   : #fff;
-        /* background: rgb(252,255,244); */
-        background   : -moz-linear-gradient(top, rgba(252, 255, 244, 1) 0%, rgba(219, 218, 201, 1) 100%);
-        /* background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(252,255,244,1)), color-stop(100%,rgba(219,218,201,1))); */
-        /* background: -webkit-linear-gradient(top, rgba(252,255,244,1) 0%,rgba(219,218,201,1) 100%); */
-        background   : -o-linear-gradient(top, rgba(252, 255, 244, 1) 0%, rgba(219, 218, 201, 1) 100%);
-        background   : -ms-linear-gradient(top, rgba(252, 255, 244, 1) 0%, rgba(219, 218, 201, 1) 100%);
-        background   : linear-gradient(top, rgba(252, 255, 244, 1) 0%, rgba(219, 218, 201, 1) 100%);
-        filter       : progid:DXImageTransform.Microsoft.gradient(startColorstr='#fcfff4', endColorstr='#dbdac9', GradientType=0);
-    }
-
-    #slides__section-banners .inner__section-banners {
-        width      : 100%;
-        line-height: 0;
-    }
-
-    .info,
-    #controls__section-banners,
-    #slides__section-banners,
-    #active__section-banners,
-    #active__section-banners label,
-    .info h3,
-    .desktop,
-    .tablet {
-        transform         : translateZ(0);
-        -webkit-transform : translateZ(0);
-        -webkit-transition: all 0.5s ease-out;
-        -moz-transition   : all 0.5s ease-out;
-        -o-transition     : all 0.5s ease-out;
-        transition        : all 0.5s ease-out;
-        width             : 100%;
-        height            : 146px;
-        margin            : 0;
-    }
-
-    #slider #controls label {
-        -moz-transform   : scale(0.8);
-        -webkit-transform: scale(0.8);
-        -o-transform     : scale(0.8);
-        -ms-transform    : scale(0.8);
-        transform        : scale(0.8);
-    }
-}
 
 @media screen and (max-width: 320px) {
     #overflow__section-banners {

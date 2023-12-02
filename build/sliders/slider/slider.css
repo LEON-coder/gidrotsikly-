@@ -651,12 +651,11 @@ h2 {
 
 	.popular-goods__slider {
 		display      : flex;
-		margin-top   : 25px;
 		position     : relative;
 		height       : auto;
 		width        : 100%;
-		padding-left : 40px;
-		padding-right: 40px;
+		padding-left : 0;
+		padding-right: 0;
 	}
 
 	#slide1:checked~#controls label:nth-child(4),
@@ -801,10 +800,27 @@ h2 {
 
 @media screen and (max-width: 320px) {
 
+	#block-picture-slider {
+		margin-top   : 0;
+		width        : 100%;
+		padding-left : 0;
+		padding-right: 0;
+	}
+
 	#slide1:checked~#slides .inner {
 		margin-left: 0;
 		width      : 100%;
 		overflow   : hidden;
+	}
+
+	.popular-goods__slider {
+		display      : flex;
+		margin-top   : 25px;
+		position     : relative;
+		height       : auto;
+		width        : 100%;
+		padding-left : 0;
+		padding-right: 0;
 	}
 
 	.slide-content:first-child {
