@@ -861,11 +861,6 @@ h2 {
 		align-items    : center;
 	}
 
-	.popular-goods__slider_block:first-child {
-		margin-right: 0px;
-		margin-left : -100px;
-	}
-
 	#overflow {
 		padding-left: 0px;
 	}
@@ -881,5 +876,10 @@ h2 {
 		position      : relative;
 		cursor        : pointer;
 		margin-left   : 0px;
+	}
+
+	.popular-goods__slider_block:first-child {
+		margin-right: 0px;
+		margin-left : 0;
 	}
 }
