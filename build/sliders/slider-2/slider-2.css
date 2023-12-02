@@ -1,24 +1,9 @@
-ol,
-ul {
-	list-style: none;
-}
-
-table {
-	border-collapse: collapse;
-	border-spacing : 0;
-}
-
 caption,
 th,
 td {
 	text-align    : left;
 	font-weight   : normal;
 	vertical-align: middle;
-}
-
-q,
-blockquote {
-	quotes: none;
 }
 
 q:before,
@@ -149,7 +134,7 @@ img {
 #active-2 {
 	margin         : 23% 0 0;
 	text-align     : center;
-	display        : flex;
+	display        : none;
 	justify-content: center;
 }
 
@@ -384,7 +369,7 @@ img {
 		margin       : 0 auto;
 		height       : 403px;
 		margin-top   : 40px;
-		padding-left : 55px;
+		padding-left : 10px;
 		padding-right: 55px;
 	}
 
@@ -398,15 +383,6 @@ img {
 		display   : block;
 	}
 
-	#slide1:checked~#controls label:nth-child(2),
-	#slide2:checked~#controls label:nth-child(3),
-	#slide3:checked~#controls label:nth-child(4),
-	#slide4:checked~#controls label:nth-child(1) {
-		background: url(../slider/arrow-right.png) no-repeat;
-		float     : right;
-		margin    : -10px -50px 0 0px;
-		display   : block;
-	}
 
 	#slide1:checked~#controls label:nth-child(4),
 	#slide2:checked~#controls label:nth-child(1),
@@ -443,8 +419,8 @@ img {
 		height       : 403px;
 		margin-top   : 40px;
 		width        : 100%;
-		padding-left : 80px;
-		padding-right: 80px;
+		padding-left : 40px;
+		padding-right: 40px;
 	}
 
 	#slide1-1:checked~#controls-2 label:nth-child(4),

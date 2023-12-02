@@ -563,6 +563,19 @@ h2 {
 		display: none;
 	}
 
+	#slider {
+		margin  : 0 auto;
+		width   : 100%;
+		position: relative;
+	}
+
+	#controls {
+		width   : 95%;
+		height  : 50px;
+		position: absolute;
+		top     : 95%;
+	}
+
 	#overflow {
 		width         : 98%;
 		overflow      : hidden;
@@ -604,7 +617,7 @@ h2 {
 
 	#slider {
 		margin: 0 auto;
-		width : 80%;
+		width : 90%;
 		height: 403px;
 	}
 
@@ -613,6 +626,14 @@ h2 {
 		display     : none;
 		margin-left : auto;
 		margin-right: auto;
+	}
+
+	.popular-goods,
+	.popular-goods-2 {
+		margin-top  : 50px;
+		width       : 100%;
+		height      : auto;
+		padding-left: 0;
 	}
 
 	.popular-goods__slider_block-2:nth-child(2) {
@@ -626,6 +647,36 @@ h2 {
 
 	#overflow {
 		width: 100%;
+	}
+
+	.popular-goods__slider {
+		display      : flex;
+		margin-top   : 25px;
+		position     : relative;
+		height       : auto;
+		width        : 100%;
+		padding-left : 40px;
+		padding-right: 40px;
+	}
+
+	#slide1:checked~#controls label:nth-child(4),
+	#slide2:checked~#controls label:nth-child(1),
+	#slide3:checked~#controls label:nth-child(2),
+	#slide4:checked~#controls label:nth-child(3) {
+		background: url(../slider/arrow-left.png) no-repeat;
+		float     : left;
+		margin    : 0px 0 0 -35px;
+		display   : block;
+	}
+
+	#slide1:checked~#controls label:nth-child(2),
+	#slide2:checked~#controls label:nth-child(3),
+	#slide3:checked~#controls label:nth-child(4),
+	#slide4:checked~#controls label:nth-child(1) {
+		background: url(../slider/arrow-right.png) no-repeat;
+		float     : right;
+		margin    : 0px -65px 0 0px;
+		display   : block;
 	}
 
 
