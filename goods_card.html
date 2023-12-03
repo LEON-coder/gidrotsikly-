@@ -558,11 +558,12 @@
           <div class="footer__block_describe-wrap footer__block_describe-catalog-wrap">
             <div class="footer__block_describe">
               <div class="footer__describe_headline">Подпишитесь на нашу рассылку <br> и узнавайте о акциях быстрее</div>
-              <div class="footer__describe-area-block">
-                <label for="Введите ваш e-mail:"></label>
-                <input class="footer__describe-area" type="text" placeholder="Введите ваш e-mail:"/>
-                <div class="footer__describe-button"> Отправить</div>
-              </div>
+              <form class="footer__describe-area-block">
+                <label for="footer__describe-area">
+                  <input class="footer__describe-area js-input-email" type="email" placeholder="Введите ваш e-mail:"/>
+                </label>
+                <button class="footer__describe-button" type="submit" value="">Отправить </button>
+              </form>
             </div>
           </div>
           <div class="footer__information_headline-block information">
