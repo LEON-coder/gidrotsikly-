@@ -111,16 +111,7 @@ img {
     opacity: 1;
 }
 
-#active__section-banners label {
-    -webkit-border-radius: 5px;
-    -moz-border-radius   : 5px;
-    border-radius        : 5px;
-    display              : inline-block;
-    width                : 10px;
-    height               : 10px;
-    margin-right         : 0;
-    border               : 1px solid #ffffff;
-}
+
 
 #controls__section-banners label:hover {
     opacity: 1;
@@ -198,6 +189,22 @@ img {
     transition        : all 0.5s ease-out;
 }
 
+.info,
+#controls__section-banners,
+#slides__section-banners,
+#active__section-banners,
+#active__section-banners label,
+.info h3,
+.desktop,
+.tablet {
+    transform         : translateZ(0);
+    -webkit-transform : translateZ(0);
+    -webkit-transition: all 0.5s ease-out;
+    -moz-transition   : all 0.5s ease-out;
+    -o-transition     : all 0.5s ease-out;
+    transition        : all 0.5s ease-out;
+}
+
 #controls__section-banners label {
     transform         : translateZ(0);
     -webkit-transform : translateZ(0);
@@ -219,20 +226,15 @@ img {
     transition        : all 1s ease-out 0.6s;
 }
 
-.info,
-#controls__section-banners,
-#slides__section-banners,
-#active__section-banners,
-#active__section-banners label,
-.info h3,
-.desktop,
-.tablet {
-    transform         : translateZ(0);
-    -webkit-transform : translateZ(0);
-    -webkit-transition: all 0.5s ease-out;
-    -moz-transition   : all 0.5s ease-out;
-    -o-transition     : all 0.5s ease-out;
-    transition        : all 0.5s ease-out;
+#active__section-banners label {
+    -webkit-border-radius: 5px;
+    -moz-border-radius   : 5px;
+    border-radius        : 5px;
+    display              : inline-block;
+    width                : 10px;
+    height               : 10px;
+    margin-right         : 10px;
+    border               : 1px solid #ffffff;
 }
 
 .section-banners--slide-1:checked {
@@ -241,7 +243,7 @@ img {
 }
 
 #active__section-banners {
-    margin: 11% 32%;
+    margin: 12% 34%;
 }
 
 footer {
