@@ -1,26 +1,20 @@
-input[type=checkbox]{
+input[type=checkbox] {
   display: none;
 }
 
-ul{
+ul {
   display: none;
 }
 
-input[type=checkbox]:checked ~ ul {
-  display: flex;
+input[type=checkbox]:checked~ul {
+  display   : flex;
   margin-top: 20px;
-  flex-wrap: wrap;
-  justify-content: flex-start;
+  flex-wrap : wrap;
   list-style: none;
 }
 
 #power {
-  width: 68px;
+  width      : 68px;
   margin-left: 55px;
-  cursor: pointer;
+  cursor     : pointer;
 }
-
-
-
-
-

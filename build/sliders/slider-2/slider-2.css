@@ -271,7 +271,6 @@ img {
 
 .info,
 #controls-2,
-#slides-2,
 #active-2,
 #active-2 label,
 .info h3,
@@ -284,6 +283,14 @@ img {
 	transition        : all 0.5s ease-out;
 }
 
+#slides-2 {
+	height: auto;
+}
+
+.inner-2 {
+	height  : 403px;
+	overflow: hidden;
+}
 
 #desktop:checked~#slider-2 {
 	max-width : 1170px;
