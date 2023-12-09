@@ -9,7 +9,7 @@ a img {
     border: none;
 }
 
-article {
+.article-3 {
     width: 100%;
 }
 
@@ -154,10 +154,7 @@ img {
 }
 
 #slides__section-banners {
-    width     : 1171px;
-    display   : flex;
-    height    : 403px;
-    background: #fff;
+    width: 62vw;
 }
 
 /* Animation */
@@ -285,8 +282,16 @@ footer {
 }
 
 @media screen and (max-width: 1024px) {
-    .article {
-        width: 100%;
+
+    .section-banners {
+        width        : 100%;
+        padding-left : 30px;
+        padding-right: 20px;
+        flex-wrap    : wrap;
+    }
+
+    .article-3 {
+        width: 82vw;
     }
 
     #slides__section-banners {
@@ -310,8 +315,7 @@ footer {
     }
 
     #overflow__section-banners {
-        width   : 100%;
-        overflow: hidden;
+        width: 75%;
     }
 
     .slide__section-banners {
@@ -358,7 +362,7 @@ footer {
         height : 400px;
     }
 
-    .article {
+    .article-3 {
         width: 100%;
     }
 
@@ -409,6 +413,18 @@ footer {
         height : auto;
     }
 
+    #active__section-banners label {
+        -webkit-border-radius: 5px;
+        -moz-border-radius   : 5px;
+        border-radius        : 5px;
+        display              : inline-block;
+        width                : 10px;
+        height               : 10px;
+        margin-right         : 10px;
+        border               : 1px solid #ffffff;
+        cursor               : pointer;
+    }
+
     #controls__section-banners {
         margin : -25% 0 0 0;
         width  : 100%;
@@ -429,7 +445,6 @@ footer {
 
     #active__section-banners {
         margin         : -30px auto;
-        width          : 71px;
         justify-content: space-between;
         display        : flex;
     }

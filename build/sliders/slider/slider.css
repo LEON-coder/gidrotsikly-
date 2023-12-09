@@ -741,16 +741,16 @@ h2 {
 		display   : none;
 	}
 
-	#slide1-1:checked~#slides-2 .inner-2 {
+	#slide1:checked~#slides .inner {
 		margin-left: 0;
 	}
 
-	.slide-content-2:nth-child(2) {
+	.slide-content:nth-child(2) {
 		margin-right: 70px;
 		margin-left : 90px;
 	}
 
-	.slide-content-2:nth-child(3) {
+	.slide-content:nth-child(3) {
 		margin-right: 40px;
 		margin-left : 30px;
 	}
