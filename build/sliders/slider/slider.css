@@ -123,21 +123,25 @@ h2 {
 #slide1:checked~#controls label:nth-child(2),
 #slide2:checked~#controls label:nth-child(3),
 #slide3:checked~#controls label:nth-child(4),
-#slide4:checked~#controls label:nth-child(1) {
+#slide4:checked~#controls label:nth-child(5),
+#slide5:checked~#controls label:nth-child(1) {
 	background: url(../slider/arrow-right.png) no-repeat;
 	float     : right;
 	margin    : 10px -80px 0 0px;
 	display   : block;
+	cursor    : pointer;
 }
 
-#slide1:checked~#controls label:nth-child(4),
-#slide2:checked~#controls label:nth-child(1),
-#slide3:checked~#controls label:nth-child(2),
-#slide4:checked~#controls label:nth-child(3) {
+#slide1:checked~#controls label:nth-child(5),
+#slide2:checked~#controls label:nth-child(4),
+#slide3:checked~#controls label:nth-child(3),
+#slide4:checked~#controls label:nth-child(2),
+#slide5:checked~#controls label:nth-child(1) {
 	background: url(../slider/arrow-left.png) no-repeat;
 	float     : left;
 	margin    : 0px 0 0 -50px;
 	display   : block;
+	cursor    : pointer;
 }
 
 
