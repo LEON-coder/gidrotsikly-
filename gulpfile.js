@@ -19,14 +19,6 @@ function ttf2woff2Converter() {
         .pipe(gulp.dest("build/fonts/"));
 }
 
-function ttf2woffConverter() {
-    return gulp.src("src/fonts/*.ttf")
-        .pipe(ttf2woff())
-        .pipe(gulp.dest("build/fonts/"));
-}
-
-
-
 function compilePug() {
     return gulp.src("./src/pug/**/*.pug")
         .pipe(pug({
@@ -35,9 +27,6 @@ function compilePug() {
         .pipe(gulp.dest('./'))
         .pipe(browserSync.stream());
 }
-
-
-
 
 function CSScompiling() {
     return gulp.src("./src/scss/styles.scss")
@@ -106,4 +95,4 @@ function imageCompressing() {
         .pipe(gulp.dest('./build/img'));
 }
 
-exports.default = gulp.parallel(ttf2woff2Converter,ttf2woffConverter,compilePug,CSScompiling,script,watcher,imageCompressing);
+exports.default = gulp.parallel(ttf2woff2Converter,compilePug,CSScompiling,script,watcher,imageCompressing);
