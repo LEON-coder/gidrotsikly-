@@ -402,14 +402,6 @@ footer {
         overflow: hidden;
     }
 
-    #slider #controls label {
-        -moz-transform   : scale(0.6);
-        -webkit-transform: scale(0.6);
-        -o-transform     : scale(0.6);
-        -ms-transform    : scale(0.6);
-        transform        : scale(0.6);
-    }
-
     .slide__section-banners {
         display: flex;
         width  : 100%;
@@ -492,13 +484,6 @@ footer {
         margin            : 0;
     }
 
-    #slider #controls label {
-        -moz-transform   : scale(0.8);
-        -webkit-transform: scale(0.8);
-        -o-transform     : scale(0.8);
-        -ms-transform    : scale(0.8);
-        transform        : scale(0.8);
-    }
 }
 
 
@@ -604,6 +589,6 @@ footer {
         -ms-transform    : scale(0.8);
         transform        : scale(0.8);
     }
-
+  
 
 }
