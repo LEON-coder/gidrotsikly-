@@ -5722,18 +5722,7 @@ body {
     align-items: center;
     height: auto;
   }
-  .popular-goods__slider_block-2 {
-    flex-direction: column;
-    display: flex;
-    width: 270px;
-    height: 403px;
-    border: 1px solid #cdcdcd;
-    margin-right: 30px;
-    align-items: center;
-    position: relative;
-    cursor: pointer;
-    margin-left: 10px;
-  }
+
   .popular-goods__nav {
     width: 100%;
     padding-left: 18px;
@@ -5741,9 +5730,9 @@ body {
   #slide1:checked ~ #controls label:nth-child(4), #slide2:checked ~ #controls label:nth-child(1), #slide3:checked ~ #controls label:nth-child(2), #slide4:checked ~ #controls label:nth-child(3) {
     background: url(partials/adaptive/slider/arrow-left.png) no-repeat;
     float: left;
-    margin: 0 0 0 -30px;
+    margin: 0 0 0 -46px;
     display: block;
-  }
+}
   #slide1:checked ~ #controls label:nth-child(2), #slide2:checked ~ #controls label:nth-child(3), #slide3:checked ~ #controls label:nth-child(4), #slide4:checked ~ #controls label:nth-child(1) {
     background: url(partials/adaptive/slider/arrow-right.png) no-repeat;
     float: right;
@@ -6011,13 +6000,7 @@ body {
     width: 80%;
     padding-left: 0;
   }
-  .popular-goods, .popular-goods-2 {
-    margin-top: 50px;
-    width: 100%;
-    height: auto;
-    overflow-x: hidden;
-    overflow-y: clip;
-  }
+
   .banner__left {
     position: relative;
     width: 100%;
