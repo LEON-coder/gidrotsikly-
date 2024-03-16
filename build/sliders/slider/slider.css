@@ -46,8 +46,6 @@ h2 {
 	display: flex;
 }
 
-
-
 #slide1:checked~#slides .inner {
 	margin-left: 0;
 }
@@ -62,10 +60,6 @@ h2 {
 
 #slide4:checked~#slides .inner {
 	margin-left: -300%;
-}
-
-#slide5:checked~#slides .inner {
-	margin-left: -400%;
 }
 
 
@@ -145,14 +139,6 @@ h2 {
 }
 
 
-#slide1:checked~#active label:nth-child(1),
-#slide2:checked~#active label:nth-child(2),
-#slide3:checked~#active label:nth-child(3),
-#slide4:checked~#active label:nth-child(4) {
-	background  : #333;
-	border-color: #333 !important;
-}
-
 .slide-content {
 	margin-right: 30px;
 }
@@ -198,7 +184,7 @@ h2 {
 	-moz-transition-timing-function: cubic-bezier(0.770, 0.000, 0.175, 1.000);
 	-ms-transition-timing-function: cubic-bezier(0.770, 0.000, 0.175, 1.000);
 	-o-transition-timing-function: cubic-bezier(0.770, 0.000, 0.175, 1.000);
-	transition-timing-function: cubic-bezier(0.770, 0.000, 0.175, 1.000);	
+	transition-timing-function: cubic-bezier(0.770, 0.000, 0.175, 1.000);
 	-moz-transform: translateZ(0);
 	-ms-transform: translateZ(0);
 	-o-transform: translateZ(0);
@@ -773,10 +759,12 @@ h2 {
 		overflow   : hidden;
 	}
 
-#slider #active {
-	display: flex;
-	margin-left: auto;
-	margin-right: auto;
+	#slider #active {
+    margin: 30px auto;
+    justify-content: space-between;
+    align-items: center;
+    width: 86px;
+    display: flex;
 }
 
 .slide {
@@ -828,6 +816,23 @@ h2 {
 
 @media screen and (max-width: 320px) {
 
+
+#slide1:checked~#slides .inner {
+	margin-left: 0;
+}
+
+#slide2:checked~#slides .inner {
+	margin-left: -110%;
+}
+
+#slide3:checked~#slides .inner {
+	margin-left: -250%;
+}
+
+#slide4:checked~#slides .inner {
+	margin-left: -300%;
+}
+
 	#block-picture-slider {
 		margin-top   : 0;
 		width        : 100%;
@@ -853,13 +858,13 @@ h2 {
 
 	.slide-content:first-child {
     margin-right: 40px;
-    margin-left: 345px;
+    margin-left: 270px;
 }
 
-	.slide-content:nth-child(2) {
-		margin-right: 80px;
-		margin-left : 75px;
-	}
+.slide-content:nth-child(2) {
+	margin-right: 80px;
+	margin-left: 0px;
+}
 
 	.slide-content:nth-child(3) {
 		margin-right: 20px;
@@ -869,12 +874,6 @@ h2 {
 	.slide-content:last-child {
 		display: flex;
 	}
-
-	#slider #active {
-    margin: 20px auto;
-    justify-content: center;
-    align-items: center;
-}
 
 	#slides article:nth-child(2) {
 		float       : left;
