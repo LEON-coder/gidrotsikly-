@@ -10,7 +10,6 @@ const { stream } = require("browser-sync");
 const browserSync = require('browser-sync').create();
 const imagemin = require("gulp-imagemin");
 const sourcemaps = require('gulp-sourcemaps');
-const ttf2woff = require('gulp-ttf2woff');
 const ttf2woff2 = require('gulp-ttf2woff2');
 
 function ttf2woff2Converter() {
@@ -56,7 +55,7 @@ function script() {
 function liveserver() {
     browserSync.init({
         server: {
-            baseDir: ""
+            baseDir: "./"
         }
     });
 }
