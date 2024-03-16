@@ -318,10 +318,12 @@ h2 {
 }
 
 #slides {
-	width     : 100%;
-	display   : flex;
-	height    : 403px;
+	width: 100%;
+	display: flex;
+	height: 403px;
 	background: #fff;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 
@@ -526,11 +528,104 @@ h2 {
 		top        : 20px;
 		left       : 25px;
 	}
+
+	#slider {
+    margin: 0 auto;
+    width: 100%;
+}
 }
 
 
+@media screen and (max-width: 1200px) {
+	.banner__left_header {
+		position   : absolute;
+		width      : 500px;
+		height     : 150px;
+		font-family: "SF Pro Display";
+		font-style : normal;
+		font-weight: 700;
+		font-size  : 50px;
+		line-height: 50px;
+		text-align : center;
+		color      : #2f3035;
+		top        : 30px;
+		left       : 40px;
+	}
+
+	#slider {
+		margin  : 0 auto;
+		width   : 100%;
+		position: relative;
+	}
+
+	#controls {
+    width: 95%;
+    height: 50px;
+    position: absolute;
+    top: 90%;
+}
+
+	#overflow {
+		width         : 98%;
+		overflow      : hidden;
+		display       : flex;
+		flex-direction: column;
+		padding-left  : 20px;
+	}
+
+	#slides article:nth-child(2) {
+    float: left;
+    margin-right: 40px;
+    margin-left: 60px;
+}
+
+#slides article:nth-child(3) {
+	float: left;
+	margin-right: 40px;
+	margin-left: 0px;
+
+}
+
+.slide-content {
+	margin-right: 30px;
+	margin-left: 2px;
+}
+
+#slide1:checked~#controls label:nth-child(5), #slide2:checked~#controls label:nth-child(4), #slide3:checked~#controls label:nth-child(3), #slide4:checked~#controls label:nth-child(2), #slide5:checked~#controls label:nth-child(1) {
+	margin: 10px 0 0 -25px;
+}
+
+#slides article:nth-child(1) {
+	float: left;
+	margin-right: 590px;
+	margin-left: 0px;
+}
+
+#slides article:nth-child(2) {
+	float: left;
+	margin-right: 40px;
+	margin-left: 655px;
+}
+
+.popular-goods__slider_block-2 {
+	margin-right: 20px;
+	margin-left: 20px;
+}
+#slides {
+	width: 80%;
+}
+
+.popular-goods, .popular-goods-2 {
+	display: flex;
+	margin-top: 80px;
+	width: 100%;
+	flex-direction: column;
+	align-items: baseline;
+	height: 505px;
+}
 
 
+}
 @media screen and (max-width: 1024px) {
 	.banner__left_header {
 		position   : absolute;
@@ -758,6 +853,10 @@ h2 {
 	padding-bottom: 0px;
 }
 
+#slides {
+	width: 90%;
+}
+
 	#slider {
 		margin: 0 auto;
 		width : 100%;
@@ -874,10 +973,9 @@ h2 {
 }
 
 #overflow {
-	width: 100%;
-	padding-right: 20px;
+	padding-right: 0px;
+	margin-left: 0;
 }
-
 .slide-content-2:nth-child(1) {
 	margin-right: 90px;
 	margin-left: 10px;
@@ -899,20 +997,19 @@ h2 {
 
 @media screen and (max-width: 375px) {
 
-.slide-content:first-child {
-    margin-right: 30px;
+	.slide-content:first-child {
+    margin-right: 40px;
     margin-left: 30px;
 }
 
 .slide-content:nth-child(2) {
-	margin-right: 30px;
-	margin-left: 5px;
+	margin-right: 45px;
+	margin-left: 0px;
 }
 .slide-content:nth-child(3) {
 	margin-right: 40px;
-	margin-left: 65px;
+	margin-left: 55px;
 }
-
 	.slide-content:last-child {
 		display    : flex;
 		margin-left: 170px;
@@ -927,7 +1024,7 @@ h2 {
 	}
 
 	#slide2:checked~#slides .inner {
-    margin-left: -100%;
+    margin-left: -150%;
 }
 
 	#slide3:checked~#slides .inner {
@@ -969,17 +1066,21 @@ h2 {
 
 @media screen and (max-width: 320px) {
 
+	#slides {
+    width: 90%;
+}
+
 
 #slide1:checked~#slides .inner {
 	margin-left: 0;
 }
 
 #slide2:checked~#slides .inner {
-	margin-left: -110%;
+	margin-left: -100%;
 }
 
 #slide3:checked~#slides .inner {
-	margin-left: -250%;
+	margin-left: -208%;
 }
 
 #slide4:checked~#slides .inner {
@@ -1010,19 +1111,18 @@ h2 {
 	}
 
 	.slide-content:first-child {
-    margin-right: 40px;
-    margin-left: 270px;
+    margin-right: 35px;
+    margin-left: 535px;
 }
 
 .slide-content:nth-child(2) {
-	margin-right: 80px;
+	margin-right: 50px;
+	margin-left: -10px;
+}
+.slide-content:nth-child(3) {
+	margin-right: 20px;
 	margin-left: 0px;
 }
-
-	.slide-content:nth-child(3) {
-		margin-right: 20px;
-		margin-left : 40px;
-	}
 
 	.slide-content:last-child {
 		display: flex;
@@ -1035,9 +1135,12 @@ h2 {
 		margin-top  : 40px;
 	}
 
-#slides {
-	overflow: hidden;
-	position: relative;
+	#slides {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 #controls {
@@ -1054,14 +1157,10 @@ h2 {
 	}
 
 	#overflow {
-    width: 100%;
-    overflow: hidden;
     display: flex;
-    flex-direction: column;
-    padding-left: 20px;
-    padding-right: 20px;
-	}
-
+    margin-left: 0;
+    padding-right: 0;
+}
 
 	.popular-goods__slider_block-2 {
 		flex-direction: column;
@@ -1076,8 +1175,4 @@ h2 {
 		margin-left   : 0px;
 	}
 
-	.popular-goods__slider_block:first-child {
-		margin-right: 0px;
-		margin-left : 0;
-	}
 }
