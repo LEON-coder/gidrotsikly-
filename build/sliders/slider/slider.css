@@ -823,14 +823,6 @@ h2 {
     padding-right: 25px;
 }
 
-	.popular-goods__slider {
-		display      : flex;
-		position     : relative;
-		height       : auto;
-		width        : 100%;
-		padding-left : 0;
-		padding-right: 0;
-	}
 
 	#slide1:checked~#controls label:nth-child(4), #slide2:checked~#controls label:nth-child(1), #slide3:checked~#controls label:nth-child(2), #slide4:checked~#controls label:nth-child(3) {
     margin: 0px 0 0 -35px;
